@@ -44,11 +44,10 @@ const canUpdateMetrics = () => ({
         /*add duration of each haircut together*/
         Object.keys(haircuts).forEach(function (haircut) {
             avgDuration += haircut.duration;
-        };
+        });
         //get average of all haircut durations and update barber profile
         avgDuration /= haircuts.length;
         this.avgCutDuration = avgDuration;
-    )
     },
 });
 

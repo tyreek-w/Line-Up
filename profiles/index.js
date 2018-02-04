@@ -1,34 +1,35 @@
-use "strict";
+"use strict";
 import User from "./user";
 
 import express from "express";
 
 import Barber from "./barber";
 
-const router = new express.Router();
+const router = express.Router();
 
 let joe = new User.User({
-  firstName: 'joe',
-  lastName: 'ivb',
-  birthdate: 'birthday',
-  email: "email",
-  phoneNumber: 'phonenumber',
-  city: "city",
-  state: 'state',
-  country: 'country'
+    firstName: 'joe',
+    lastName: 'ivb',
+    birthdate: 'birthday',
+    email: "email",
+    phoneNumber: 'phonenumber',
+    city: "city",
+    state: 'state',
+    country: "country"
 }, true);
 
 joe.update("firstName", "Emen");
 
-let joeBarber = new Barber(
-  joe, {
-    username: 'snazzyMan'
-  }
+
+let joeBarber = {};
+joeBarber = new Barber(
+    joe, {
+        username: "snazzyMan"
+    }
 );
 
-router.get("/", function(req, res) {
-  let words = req.name;
-  res.send(words);
+router.get("/", function (req, res) {
+    res.json(joeBarber);
 });
 
-export default router;
+module.exports = router;
