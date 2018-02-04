@@ -8,16 +8,14 @@ const creditOptions = [10, 20, 30];
 const plans = [basic, advanced, regular];
 
 const memberPlans = {
-
   terms: {
     daily: plans,
     weekly: plans,
     monthly: plans,
     trimonthly: plans,
     annual: plans
-  }
+  },
+};
 
-}
 
-
-module.exports = {memberPlans, creditOptions};
+export default {memberPlans, creditOptions};

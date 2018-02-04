@@ -1,13 +1,13 @@
 "use strict";
 //declaration entity file for user model
-const profiles = require('./profileTypes');
+import profiles from "./profileTypes";
 
 const active = true;
 
 //generates id for database storage
 const canActivate = (info) => ({
 
-    activate: (verified) => {
+    activate(verified){
         if(verified){
           info.status = active;
         }
@@ -19,23 +19,21 @@ const canActivate = (info) => ({
 
 const canGenerateId = () => ({
 
-    generateId: function(x){
+    generateId(x) {
 
-    let someId = x;
+        let someId = x;
 
-    //checks to see if there is an existing id
-    if(this.id){
-      console.log('There is already an existing id');
-      return
-    }
-    else{
-      console.log('attempting to add id...');
-      //adds new id property to user object
-      Object.defineProperty(this, 'id', {
-        value: someId
-      });
-    }
-  }
+        //checks to see if there is an existing id
+        if (this.id) {
+            console.log("There is already an existing id");
+            return
+        }
+        console.log("attempting to add id...");
+        //adds new id property to user object
+        Object.defineProperty(this, "id", {
+            value: someId
+        });
+    },
 });
 
 //gives user ability to check if payment is setup
@@ -118,11 +116,11 @@ const canUpdate = () => ({
         });
       }
       else{
-        console.log('Could not find a matching key value pair');
+        console.log("Could not find a matching key value pair");
         //Error: this property does not exist
       }
 
     }
 });
 
-module.exports = {User, canUpdate};
+export default {User, canUpdate};

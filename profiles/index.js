@@ -1,22 +1,24 @@
-"use strict";
-const express = require('express');
-const router = express.Router();
+use "strict";
+import User from "./user";
 
-const User = require('./user');
-const Barber = require('./barber');
+import express from "express";
+
+import Barber from "./barber";
+
+const router = new express.Router();
 
 let joe = new User.User({
   firstName: 'joe',
   lastName: 'ivb',
   birthdate: 'birthday',
-  email: 'email',
+  email: "email",
   phoneNumber: 'phonenumber',
-  city: 'city',
+  city: "city",
   state: 'state',
   country: 'country'
 }, true);
 
-joe.update('firstName', 'Emen');
+joe.update("firstName", "Emen");
 
 let joeBarber = new Barber(
   joe, {
@@ -24,9 +26,9 @@ let joeBarber = new Barber(
   }
 );
 
-router.get('/', function(req, res) {
+router.get("/", function(req, res) {
   let words = req.name;
   res.send(words);
 });
 
-module.exports = router;
+export default router;

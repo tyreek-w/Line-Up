@@ -1,8 +1,9 @@
 "use strict";
-const memberPlans = require('./barberMemberInfo');
-const creditOptions = require('./barberMemberInfo')
-const profiles = require('./profileTypes');
-const User = require('./user');
+import profiles from "./profileTypes";
+
+import User from "./user";
+
+import creditOptions from "./barberMemberInfo";
 //declaration entity file for barber model
 
 const monthlyAmount = 0;
@@ -14,81 +15,75 @@ const canChooseBarbershop = () => ({
 
 const canUpdateMetrics = () => ({
 
-    updateAverageDuration: function(haircuts){
-      let avgDuration = 0;
+    updateWaitTime(reviews) {
 
-      //add duration of each haircut together
-      for(haircut in haircuts){
+        let avgWaitTime = 0;
+        let waitTimeEntered = 0;
 
-        for(duration in haircut){
-          avgDuration += duration;
-        };
-      };
+        Object.keys(reviews).forEach(function (review) {
+            if (review.waitTime === null) {
+                return;
+            }
+            avgWaitTime += review.waitTime;
+            waitTimeEntered++;
+        });
+        avgWaitTime /= waitTimeEntered;
 
-      //get average of all haircut durations and update barber profile
-      avgDuration = avgDuration/haircuts.length;
-      this.avgCutDuration = avgDuration;
+        Object.defineProperty(this, avgWait, {
+            value: avgWaitTime,
+            enumerable: true,
+            writable: true
+        });
+
     },
 
-    updateWaitTime: function(reviews){
 
-      let avgWaitTime = 0;
-      let waitTimeEntered = 0
+    updateAverageDuration(haircuts) {
+        let avgDuration = 0;
 
-      for(review in reviews){
-        for(waitTime in review){
-
-          if(waitTime !== null){
-            avgWaitTime += waitTime;
-            waitTimeEntered++;
-          }
-
+        /*add duration of each haircut together*/
+        Object.keys(haircuts).forEach(function (haircut) {
+            avgDuration += haircut.duration;
         };
-      };
-
-      avgWaitTime = avgWaitTime/waitTimeEntered;
-
-      Object.defineProperty(this, avgWait, {
-        value: avgWaitTime,
-        enumerable: true,
-        writable: true
-      });
-
-    }
+        //get average of all haircut durations and update barber profile
+        avgDuration /= haircuts.length;
+        this.avgCutDuration = avgDuration;
+    )
+    },
 });
 
 
 const canConfigureMembership = () => ({
 
-  //barber can check if they are up to date on there payments
-  isPremium: function(){
-    if(this.paymentInfo.status == 'current'){
-      Object.defineProperty(barber, 'premium', {
-         value: true,
-         writable: true,
-         enumerable: true
-      });
+//barber can check if they are up to date on there payments
+    isPremium() {
+        if (this.paymentInfo.status == 'current') {
+            Object.defineProperty(barber, 'premium', {
+                value: true,
+                writable: true,
+                enumerable: true
+            });
+        }
+    },
+
+
+//barber can check what subscription they currently have
+    checkTerm() {
+
+        if (this.paymentInfo.pastAmount == monthlyAmount) {
+            Object.defineProperty(this.paymentInfo, 'arrangement', {
+                value: 'monthly',
+                writable: true,
+                enumerable: true
+            });
+        } else if (this.paymentInfo.pastAmount == yearlyAmount) {
+            Object.defineProperty(this.paymentInfo, 'arrangement', {
+                value: 'yearly',
+                writable: true,
+                enumerable: true
+            });
+        }
     }
-  },
-
-
-  //barber can check what subscription they currently have
-  checkTerm: function(){
-
-    if(this.paymentInfo.pastAmount == monthlyAmount){
-      Object.defineProperty(this.paymentInfo, 'arrangement', {
-         value: 'monthly',
-         writable: true,
-         enumerable: true
-      });
-    }else if(this.paymentInfo.pastAmount == yearlyAmount){
-      Object.defineProperty(this.paymentInfo, 'arrangement', {
-         value: 'yearly',
-         writable: true,
-         enumerable: true
-      });
-    }
-  }
 });
 
 //Public Functions
@@ -97,20 +92,15 @@ const canConfigureMembership = () => ({
 function Barber (user,profileObj) {
 
     //check to see if user has a barber profile
-    if(user.hasBarberProfile == true){
-      //creates a barber profile object
-      return Object.assign(profileObj, canConfigureMembership(profile), user.canUpdate());
-    }
-    else{
-
-      Object.defineProperty(user, 'hasBarberProfile', {
+    if (user.hasBarberProfile == true) return Object.assign(profileObj, canConfigureMembership(profile), user.User.canUpdate(), canUpdateMetrics());
+    Object.defineProperty(user, "hasBarberProfile", {
         value: true,
         writable: true,
         enumerable: true
-      });
+    });
 
-      //assign user provided values to new barber profile
-      let profile = {
+    //assign user provided values to new barber profile
+    let profile = {
         type: profiles[1],
         username: profileObj.username,
         premium: false,
@@ -118,11 +108,10 @@ function Barber (user,profileObj) {
         //set average haircut duration in seconds from barber profile
         avgCutDuration: profileObj.avgDuration || 0
 
-      }
-      //creates a new barber profile object
-      return Object.assign(profile, canConfigureMembership(), User.canUpdate());
-    }
+    };
+    //creates a new barber profile object
+    return Object.assign(profile, canConfigureMembership(), User.canUpdate());
 
   }
 
-  module.exports = Barber;
+export default Barber;

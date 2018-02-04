@@ -1,4 +1,4 @@
-use strict;
+use "strict";
 
 const typeSwitch = [
   [1,  1,    1,    1  ],
