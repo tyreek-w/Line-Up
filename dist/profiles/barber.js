@@ -68,7 +68,7 @@ var canConfigureMembership = function canConfigureMembership() {
 
         //barber can check if they are up to date on there payments
         isPremium: function isPremium() {
-            if (this.paymentInfo.status == 'current') {
+            if (this.paymentInfo.status === 'current') {
                 Object.defineProperty(barber, 'premium', {
                     value: true,
                     writable: true,
@@ -81,13 +81,13 @@ var canConfigureMembership = function canConfigureMembership() {
         //barber can check what subscription they currently have
         checkTerm: function checkTerm() {
 
-            if (this.paymentInfo.pastAmount == monthlyAmount) {
+            if (this.paymentInfo.pastAmount === monthlyAmount) {
                 Object.defineProperty(this.paymentInfo, 'arrangement', {
                     value: 'monthly',
                     writable: true,
                     enumerable: true
                 });
-            } else if (this.paymentInfo.pastAmount == yearlyAmount) {
+            } else if (this.paymentInfo.pastAmount === yearlyAmount) {
                 Object.defineProperty(this.paymentInfo, 'arrangement', {
                     value: 'yearly',
                     writable: true,
@@ -104,7 +104,7 @@ var canConfigureMembership = function canConfigureMembership() {
 function Barber(user, profileObj) {
 
     //check to see if user has a barber profile
-    if (user.hasBarberProfile == true) return Object.assign(profileObj, canConfigureMembership(profile), user.User.canUpdate(), canUpdateMetrics());
+    if (user.hasBarberProfile === true) return Object.assign(profileObj, canConfigureMembership(profileObj), user.User.canUpdate(), canUpdateMetrics());
     Object.defineProperty(user, "hasBarberProfile", {
         value: true,
         writable: true,
