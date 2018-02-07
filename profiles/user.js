@@ -4,6 +4,39 @@ import profiles from "./profileTypes";
 
 const active = true;
 
+//validates info before user can be created
+const verifyInfo = function(obj) {
+
+    if(typeof obj.firstName !== "String"){
+        //throw not correct type error
+        return false;
+    }else if(typeof obj.lastName !== "String" ){
+        //throw not correct type error
+        return false;
+    }else if(typeof obj.birthdate !== "String"){
+        //throw incorrect birthDate error
+        return false;
+    }else if(typeof obj.email !== "String"){
+        //throw incorrect email error
+        return false;
+    }else if(typeof obj.phoneNumber !== "String"){
+        //throw incorrect phone format error
+        return false;
+    }else if((typeof obj.city && typeof obj.state) !== "String"){
+        //throw invalid location format error
+        return false;
+    }else if(typeof obj.country !== "String"){
+        //throw invalid country format error
+        return false;
+    }else if(typeof obj.gender !== "String"){
+        //incorrect format
+        return false;
+    }
+    else{
+        return true;
+    }
+};
+
 //generates id for database storage
 const canActivate = (info) => ({
 
@@ -66,34 +99,38 @@ function User (info, verified) {
       }
     }
     else {
-      //creates a new user profile
-      let state = {
-
-        type: profiles[0],
-        status: active,
-        firstName: info.firstName,
-        lastName: info.lastName,
-        birthdate: info.birthdate,
-        email: info.email,
-        phoneNumber: info.phoneNumber,
-        city: info.city,
-        state: info.state,
-        country: info.country,
-        gender: info.gender,
-        paymentInfo: null,
-        dateCreated: new Date()
-
+      if(verifyInfo(obj)){
+          console.log(error);
       }
+      else{
+            //creates a new user profile
+            let state = {
+
+                type: profiles[0],
+                status: active,
+                firstName: info.firstName,
+                lastName: info.lastName,
+                birthdate: info.birthdate,
+                email: info.email,
+                phoneNumber: info.phoneNumber,
+                city: info.city,
+                state: info.state,
+                country: info.country,
+                gender: info.gender,
+                paymentInfo: null,
+                dateCreated: new Date()
+
+            }
 
 
-      Object.defineProperty(state, 'hasBarberProfile', {
-        value: false,
-        enumerable: true,
-        writable: true
-      });
+            Object.defineProperty(state, "hasBarberProfile", {
+                value: false,
+                enumerable: true,
+                writable: true
+            });
 
-      return Object.assign(state, canUpdate(), canGenerateId(), checkPaymentInfo());
-
+            return Object.assign(state, canUpdate(), canGenerateId(), checkPaymentInfo());
+        }
     }
   }
   else{
