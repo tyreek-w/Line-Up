@@ -1,17 +1,13 @@
 "use strict";
-const express = require("express");
-const volleyball = require("volleyball");
 
+var express = require("express");
+var volleyball = require("volleyball");
 
-const index = require("./profiles/index");
+var index = require("./profiles/index");
 var app = express();
 
 app.use(volleyball);
 app.use("/", index);
-
-
-
-
 
 app.listen(3000, function (err) {
     if (err) {
@@ -21,3 +17,4 @@ app.listen(3000, function (err) {
 });
 
 module.exports = app;
+//# sourceMappingURL=index.js.map

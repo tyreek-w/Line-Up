@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../profiles/userActionController.js"],"names":["createProfile","Object","entryPoint"],"mappings":"AAAA;;AAEA,IAAMA,gBAAgB,SAAhBA,aAAgB,CAACC,MAAD,EAASC,UAAT,EAAwB,CAI7C,CAJD","file":"userActionController.js","sourcesContent":["\"use strict\";\n\nconst createProfile = (Object, entryPoint) => {\n\n    \n\n}"]}

@@ -1,5 +1,6 @@
 "use strict";
+//declares profile classification variables
+const profileType = ["client", "barber", "barbershop"];
+const status = ["active", "blocked", "deactivated"];
 
- const profiles = ['client', 'barber', 'barbershop'];
-
-module.exports = profiles;
+module.exports = {profileType, status};
