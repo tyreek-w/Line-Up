@@ -21,4 +21,4 @@ var config = {
     production: {}
 };
 module.exports = config;
-//# sourceMappingURL=config.js.map
+//# sourceMappingURL=config.env.map
