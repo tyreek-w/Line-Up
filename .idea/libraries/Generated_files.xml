@@ -2,7 +2,14 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/DBConnection.js" />
+        <item url="file://$PROJECT_DIR$/dist/config.js" />
         <item url="file://$PROJECT_DIR$/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
@@ -13,7 +20,14 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/DBConnection.js" />
+      <root url="file://$PROJECT_DIR$/dist/config.js" />
       <root url="file://$PROJECT_DIR$/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />

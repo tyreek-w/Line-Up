@@ -1,19 +1,31 @@
 "use strict";
-const express = require("express");
-const volleyball = require("volleyball");
+const express = require('express');
+const volleyball = require('volleyball');
+const Sequelize = require('sequelize');
+const env = process.env.NODE_ENV || 'development';
+const config = require('./config')[env];
 
+const index = require('./profiles/index');
 
-const index = require("./profiles/index");
-var app = express();
+//import db
+const db = require("./profiles/DBModels/index");
+
+//test db connection, uncomment when changing database port
+// db.authenticate()
+//     .then(() => {
+//         console.log('Connection has been established successfully.');
+//     })
+//     .catch(err => {
+//         console.error('Unable to connect to the database:', err);
+//     });
+
+const app = express();
 
 app.use(volleyball);
 app.use("/", index);
 
 
-
-
-
-app.listen(3000, function (err) {
+app.listen(config.server.port, function (err) {
     if (err) {
         console.log(err);
     }

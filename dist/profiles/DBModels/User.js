@@ -27,7 +27,8 @@ module.exports = function (_Sequelize$Model) {
             return _get(User.__proto__ || Object.getPrototypeOf(User), 'init', this).call(this, {
                 id: {
                     type: Sequelize.INTEGER,
-                    primaryKey: true
+                    primaryKey: true,
+                    autoIncrement: true
                 },
                 firstName: {
                     type: Sequelize.STRING,
@@ -38,7 +39,7 @@ module.exports = function (_Sequelize$Model) {
                     allowNull: false
                 },
                 status: {
-                    type: Sequelize.TEXT,
+                    type: Sequelize.STRING,
                     defaultValue: 'active'
                 },
                 birthdate: {
@@ -55,9 +56,7 @@ module.exports = function (_Sequelize$Model) {
                 },
                 gender: {
                     type: Sequelize.TINYINT
-                },
-                createdAt: 'dateCreated',
-                timestamps: true
+                }
             }, { sequelize: sequelize });
         }
     }, {

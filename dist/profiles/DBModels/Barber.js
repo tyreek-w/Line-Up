@@ -1,3 +1,6 @@
+/*
+* Barber DB class for MySQL
+* Has a Userid Foreign Key*/
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -13,58 +16,50 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Sequelize = require('sequelize');
 
 module.exports = function (_Sequelize$Model) {
-    _inherits(User, _Sequelize$Model);
+    _inherits(Barber, _Sequelize$Model);
 
-    function User() {
-        _classCallCheck(this, User);
+    function Barber() {
+        _classCallCheck(this, Barber);
 
-        return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Barber.__proto__ || Object.getPrototypeOf(Barber)).apply(this, arguments));
     }
 
-    _createClass(User, null, [{
+    _createClass(Barber, null, [{
         key: 'init',
         value: function init(sequelize) {
-            return _get(User.__proto__ || Object.getPrototypeOf(User), 'init', this).call(this, {
+            return _get(Barber.__proto__ || Object.getPrototypeOf(Barber), 'init', this).call(this, {
                 id: {
                     type: Sequelize.INTEGER,
-                    primaryKey: true
+                    primaryKey: true,
+                    autoIncrement: true
                 },
-                firstName: {
+                username: {
                     type: Sequelize.STRING,
                     allowNull: false
                 },
-                lastName: {
+                isPremium: {
+                    type: Sequelize.BOOLEAN,
+                    allowNull: false,
+                    defaultValue: false
+                },
+                paymentInfo: {
                     type: Sequelize.STRING,
-                    allowNull: false
-                },
-                status: {
-                    type: Sequelize.TEXT,
-                    defaultValue: 'active'
-                },
-                birthdate: {
-                    type: Sequelize.STRING,
-                    allowNull: true
-                },
-                email: {
-                    type: Sequelize.STRING,
-                    allowNull: false
-                },
-                passwordHash: {
-                    type: Sequelize.STRING,
-                    allowNull: false
-                },
-                gender: {
-                    type: Sequelize.TINYINT
-                },
-                createdAt: 'dateCreated',
-                timestamps: true
+                    allowNull: true,
+                    defaultValue: null
+                }
             }, { sequelize: sequelize });
         }
     }, {
         key: 'associate',
-        value: function associate(models) {}
+        value: function associate(models) {
+            this.belongsTo(models.User, { //associates Barber with User as a source, adds foreign key
+                foreignKey: {
+                    allowNull: false
+                }
+            });
+        }
     }]);
 
-    return User;
+    return Barber;
 }(Sequelize.Model);
-//# sourceMappingURL=User.js.map
+//# sourceMappingURL=Barber.js.map
