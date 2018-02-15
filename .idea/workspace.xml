@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="Added babel env module">
-      <change beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.env" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config.env" afterPath="$PROJECT_DIR$/config.js" />
       <change beforePath="$PROJECT_DIR$/dist/config.js" afterPath="$PROJECT_DIR$/dist/config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -95,25 +97,19 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="290">
+              <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.env">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-              <folding>
-                <marker date="1518701216000" expanded="true" signature="13:417" ph="{...}" />
-                <marker date="1518701216000" expanded="true" signature="32:389" ph="{&quot;url&quot;: &quot;&quot;...}" />
-                <marker date="1518701216000" expanded="true" signature="99:299" ph="{&quot;host&quot;: &quot;127.0.0.1&quot;...}" />
-                <marker date="1518701216000" expanded="true" signature="318:383" ph="{&quot;host&quot;: &quot;127.0.0.1&quot;...}" />
-                <marker date="1518701216000" expanded="true" signature="407:415" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -330,7 +326,7 @@
       <workItem from="1517767981705" duration="7952000" />
       <workItem from="1517961880054" duration="4120000" />
       <workItem from="1518570161947" duration="2820000" />
-      <workItem from="1518658263350" duration="15717000" />
+      <workItem from="1518658263350" duration="15876000" />
     </task>
     <task id="LOCAL-00001" summary="Added babel env module">
       <created>1517772081083</created>
@@ -343,7 +339,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30609000" />
+    <option name="totallyTimeSpent" value="30768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,6 +352,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="979" height="795" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19415449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -692,20 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <marker date="1518701216000" expanded="true" signature="13:417" ph="{...}" />
-            <marker date="1518701216000" expanded="true" signature="32:389" ph="{&quot;url&quot;: &quot;&quot;...}" />
-            <marker date="1518701216000" expanded="true" signature="99:299" ph="{&quot;host&quot;: &quot;127.0.0.1&quot;...}" />
-            <marker date="1518701216000" expanded="true" signature="318:383" ph="{&quot;host&quot;: &quot;127.0.0.1&quot;...}" />
-            <marker date="1518701216000" expanded="true" signature="407:415" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -791,10 +774,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="290">
+          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
           <folding />
         </state>
       </provider>
