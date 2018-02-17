@@ -41,9 +41,9 @@ passport.use('local-signin', new LocalStrategy({
         passwordField: 'password',
         passReqToCallback: true
     }, (req, username, password, done) => {
-        let type = req.type || 'client';
+        let type = req.body.type || 'client';
         if (type === 'client') { //if type is client , proceeds to looking for a client User
-
+            let User = new models.User();
             //looks for user with matching email
             models.User.findOne({where: {email: username}})
                 .then((user, err) => {
@@ -51,34 +51,33 @@ passport.use('local-signin', new LocalStrategy({
                     if (err) {return done(err);}
                     //if no user is found prompt user that email is incorrect
                     if (!user) {
+                        console.log("User has incorrect email");
                         return done(null, false, {message: 'Incorrect email'})
                     }
                     //if password validation fails prompt user that password is incorrect
-                    if (!user.validPassword(password)) {
+                    if (!User.validatePassword(user, password)) {
+                        console.log("User has incorrect password");
                         return done(null, false, {message: 'Incorrect password'})
                     }
-                    //if nothing fails, complete request and respond with user object
-                    return done(null, user)
-                })
-                .catch(err);
-            } else if (type === 'barber' && req.userId) { //if type is barber and userid has been passed proceeds to looking for barber
-                //looks for barber with matching username
-                models.Barber.findOne({
-                    where: {username: req.username}
-                }).then((user, err) => {
-                    //respond with error if any are found
-                    if (err) return done(err);
-                    //if no barber matches prompt user that username is incorrect
-                    if (!user) {
-                        return done(null, false, {message: 'Incorrect username'})
+                    else{
+                        //if nothing fails, complete request and respond with user object
+                        return done(null, user)
                     }
-                    //if nothing fails, complete request and respond with barber object
-                    return done(null, user)
-                });
-            }
-            else{
-                //if all else fails prompt user for invalid credentials
-                return done(null, false, {message: 'Invalid credentials'})
+                })
+            } else if (type === 'barber' && req.userId) { //if type is barber and userid has been passed proceeds to looking for barber
+            //looks for barber with matching username
+            models.Barber.findOne({
+                where: {username: req.username}
+            }).then((user, err) => {
+                //respond with error if any are found
+                if (err) return done(err);
+                //if no barber matches prompt user that username is incorrect
+                if (!user) {
+                    return done(null, false, {message: 'Incorrect username'})
+                }
+                //if nothing fails, complete request and respond with barber object
+                return done(null, user)
+            });
         }})
     );
 
@@ -102,7 +101,7 @@ passport.use('local-signup', new LocalStrategy({
                         phoneNumber: req.body.phoneNumber,
                         gender: req.body.gender,
                         paymentInfo: req.body.paymentInfo || null,
-                        passwordHash: req.body.password
+                        passwordHash: password
                     }
                 })
                 .spread((user, created) => {

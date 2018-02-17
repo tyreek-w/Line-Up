@@ -2,40 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="Added babel env module">
-      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/Services/Passport.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/routes/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/skrubinator.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/skrubinator.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change beforePath="$PROJECT_DIR$/dist/config.js" afterPath="$PROJECT_DIR$/dist/config.js" />
-      <change beforePath="$PROJECT_DIR$/dist/config.js.map" afterPath="$PROJECT_DIR$/dist/config.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" afterPath="$PROJECT_DIR$/dist/index.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/User.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/User.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/User.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/barber.js" afterPath="$PROJECT_DIR$/dist/profiles/barber.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/barber.js.map" afterPath="$PROJECT_DIR$/dist/profiles/barber.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/index.js" afterPath="$PROJECT_DIR$/dist/profiles/index.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/index.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/profileTypes.js" afterPath="$PROJECT_DIR$/dist/profiles/profileTypes.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/profileTypes.js.map" afterPath="$PROJECT_DIR$/dist/profiles/profileTypes.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/user.js" afterPath="$PROJECT_DIR$/dist/profiles/user.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/user.js.map" afterPath="$PROJECT_DIR$/dist/profiles/user.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/userActionController.js" afterPath="$PROJECT_DIR$/dist/profiles/userActionController.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/userActionController.js.map" afterPath="$PROJECT_DIR$/dist/profiles/userActionController.js.map" />
-      <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/profiles/DBModels/Barber.js" afterPath="$PROJECT_DIR$/profiles/DBModels/Barber.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/index.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/index.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/Services/Passport.js" afterPath="$PROJECT_DIR$/dist/profiles/Services/Passport.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/Services/Passport.js.map" afterPath="$PROJECT_DIR$/dist/profiles/Services/Passport.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/index.js" afterPath="$PROJECT_DIR$/dist/profiles/routes/index.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/routes/index.js.map" />
       <change beforePath="$PROJECT_DIR$/profiles/DBModels/User.js" afterPath="$PROJECT_DIR$/profiles/DBModels/User.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/barber.js" afterPath="$PROJECT_DIR$/profiles/barber.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/profiles/profileTypes.js" afterPath="$PROJECT_DIR$/profiles/profileTypes.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/user.js" afterPath="$PROJECT_DIR$/profiles/user.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/userActionController.js" afterPath="$PROJECT_DIR$/profiles/userActionController.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/DBModels/index.js" afterPath="$PROJECT_DIR$/profiles/DBModels/index.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/Services/Passport.js" afterPath="$PROJECT_DIR$/profiles/Services/Passport.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/routes/index.js" afterPath="$PROJECT_DIR$/profiles/routes/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,11 +31,11 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="user.js" pinned="false" current-in-tab="true">
+            <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/profiles/user.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="225">
-                    <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+                  <state relative-caret-position="285">
+                    <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
                     <folding>
                       <element signature="e#95#128#0" expanded="false" />
                       <element signature="e#575#624#0" expanded="false" />
@@ -65,7 +44,7 @@
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="barber.js" pinned="false" current-in-tab="false">
+            <file leaf-file-name="barber.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/profiles/barber.js">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="45">
@@ -95,8 +74,8 @@
       <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles/DBModels/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state relative-caret-position="332">
+              <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -105,7 +84,7 @@
       <file leaf-file-name="userActionController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles/userActionController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
+            <state relative-caret-position="379">
               <caret line="58" column="1" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="58" selection-end-column="1" />
               <folding />
             </state>
@@ -124,21 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profileTypes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profiles/profileTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="139">
+              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -147,18 +116,18 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="163">
               <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Passport.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Passport.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profiles/Services/Passport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -176,11 +145,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles/DBModels/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -209,7 +188,6 @@
         <option value="$PROJECT_DIR$/profiles/UserDBModel.js" />
         <option value="$PROJECT_DIR$/DBConnection.js" />
         <option value="$PROJECT_DIR$/profiles/DBModels/DBConnection.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/profiles/DBModels/Barber.js" />
         <option value="$PROJECT_DIR$/profiles/profileTypes.js" />
@@ -218,10 +196,11 @@
         <option value="$PROJECT_DIR$/profiles/user.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/profiles/userActionController.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/User.js" />
         <option value="$PROJECT_DIR$/profiles/barber.js" />
-        <option value="$PROJECT_DIR$/profiles/Services/Passport.js" />
+        <option value="$PROJECT_DIR$/profiles/DBModels/User.js" />
+        <option value="$PROJECT_DIR$/profiles/DBModels/index.js" />
         <option value="$PROJECT_DIR$/profiles/routes/index.js" />
+        <option value="$PROJECT_DIR$/profiles/Services/Passport.js" />
       </list>
     </option>
   </component>
@@ -237,8 +216,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="30" />
-    <option name="width" value="1169" />
+    <option name="x" value="-34" />
+    <option name="y" value="23" />
+    <option name="width" value="821" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectView">
@@ -268,6 +248,12 @@
               <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
               <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
               <item name="profiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+              <item name="DBModels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +355,7 @@
       <workItem from="1518658263350" duration="57116000" />
       <workItem from="1518804641059" duration="4015000" />
       <workItem from="1518883542697" duration="56000" />
-      <workItem from="1518883649756" duration="2856000" />
+      <workItem from="1518883649756" duration="12747000" />
     </task>
     <task id="LOCAL-00001" summary="Added babel env module">
       <created>1517772081083</created>
@@ -382,7 +368,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78935000" />
+    <option name="totallyTimeSpent" value="88826000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,18 +380,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1169" height="805" extended-state="0" />
-    <editor active="true" />
+    <frame x="-34" y="23" width="821" height="805" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12543555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32163742" sideWeight="0.5053996" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32564843" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33918127" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33861673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3170029" sideWeight="0.49460045" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3170029" sideWeight="0.49460045" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -457,7 +442,7 @@
           <line>1</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -745,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/profileTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -769,38 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/DBModels/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/userActionController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="58" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/DBModels/Barber.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -811,24 +756,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/user.js">
+    <entry file="file://$PROJECT_DIR$/profiles/userActionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="e#95#128#0" expanded="false" />
-            <element signature="e#575#624#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="379">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="58" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/Services/Passport.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="163">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -840,19 +780,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#95#128#0" expanded="false" />
+            <element signature="e#575#624#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/barber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/DBModels/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/DBModels/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="345">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="139">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/Services/Passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

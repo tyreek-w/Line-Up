@@ -3,6 +3,10 @@ const path = require("path");
 const Sequelize = require('sequelize');
 const env = process.env.NODE_ENV || 'development';
 const config = require('../../config')[env];
+
+const bcrypt = require('bcrypt');
+const saltRounds = 4;
+
 //Initializes db and uses config variables to populate verification fields
 const db = new Sequelize(config.database.db_name, config.database.username, config.database.password, {
     host: config.database.host,
@@ -41,6 +45,42 @@ const models = Object.assign({}, ...fs.readdirSync(__dirname)
 for (const model of Object.keys(models)) {
     typeof models[model].associate === 'function' && models[model].associate(models);
 }
+//User Hooks
+
+//using the user model encrypt and salt password before create
+models.User.beforeCreate((user, options) => {
+        console.log("Storing the password");
+        return new Promise((resolve, reject) => {
+            bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
+                if(err) return reject(err);
+                bcrypt.hash(user.passwordHash, salt, (err, hash) => { //generate hash using password and salt generated
+                    console.log("Getting password encrypted");
+                    user.passwordHash = hash; //sets user password to hash
+                    return resolve(user, options);
+                });
+            });
+        });
+});
+
+//instance Methods
+models.User.prototype.validatePassword = ((user, testPass) => {
+
+        console.log("Validating password" + " : " + user.passwordHash + " and " + testPass);
+        bcrypt.compare(testPass, user.passwordHash, (err, res) => {
+            if (err) return (err);
+            else{
+                if(res) {
+                    console.log("validate successfully");
+                    return res;
+                }
+                else {
+                    console.log("validate unsuccessful");
+                    return res;
+                }
+
+            }
+        });
+});
 
 module.exports = models;
 

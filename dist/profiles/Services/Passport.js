@@ -41,10 +41,10 @@ passport.use('local-signin', new LocalStrategy({
     passwordField: 'password',
     passReqToCallback: true
 }, function (req, username, password, done) {
-    var type = req.type || 'client';
+    var type = req.body.type || 'client';
     if (type === 'client') {
         //if type is client , proceeds to looking for a client User
-
+        var User = new models.User();
         //looks for user with matching email
         models.User.findOne({ where: { email: username } }).then(function (user, err) {
             //respond with error if any are found
@@ -53,15 +53,18 @@ passport.use('local-signin', new LocalStrategy({
             }
             //if no user is found prompt user that email is incorrect
             if (!user) {
+                console.log("User has incorrect email");
                 return done(null, false, { message: 'Incorrect email' });
             }
             //if password validation fails prompt user that password is incorrect
-            if (!user.validPassword(password)) {
+            if (!User.validatePassword(user, password)) {
+                console.log("User has incorrect password");
                 return done(null, false, { message: 'Incorrect password' });
+            } else {
+                //if nothing fails, complete request and respond with user object
+                return done(null, user);
             }
-            //if nothing fails, complete request and respond with user object
-            return done(null, user);
-        }).catch(err);
+        });
     } else if (type === 'barber' && req.userId) {
         //if type is barber and userid has been passed proceeds to looking for barber
         //looks for barber with matching username
@@ -77,9 +80,6 @@ passport.use('local-signin', new LocalStrategy({
             //if nothing fails, complete request and respond with barber object
             return done(null, user);
         });
-    } else {
-        //if all else fails prompt user for invalid credentials
-        return done(null, false, { message: 'Invalid credentials' });
     }
 }));
 
@@ -102,7 +102,7 @@ passport.use('local-signup', new LocalStrategy({
                 phoneNumber: req.body.phoneNumber,
                 gender: req.body.gender,
                 paymentInfo: req.body.paymentInfo || null,
-                passwordHash: req.body.password
+                passwordHash: password
             }
         }).spread(function (user, created) {
             if (created) {

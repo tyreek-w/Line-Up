@@ -12,7 +12,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var Sequelize = require('sequelize');
 var bcrypt = require('bcrypt');
-var saltRounds = 4;
 
 module.exports = function (_Sequelize$Model) {
     _inherits(User, _Sequelize$Model);
@@ -26,8 +25,6 @@ module.exports = function (_Sequelize$Model) {
     _createClass(User, null, [{
         key: 'init',
         value: function init(sequelize) {
-            var _this2 = this;
-
             return _get(User.__proto__ || Object.getPrototypeOf(User), 'init', this).call(this, {
                 id: {
                     type: Sequelize.INTEGER,
@@ -69,38 +66,23 @@ module.exports = function (_Sequelize$Model) {
                     allowNull: true,
                     defaultValue: null
                 }
-            }, { sequelize: sequelize }, {
-                hooks: {
-                    beforeCreate: function beforeCreate(user, options) {
-                        console.log();
-                        user.password = _this2.generateHash(user.password, saltRounds);
-                    }
-                }
-            });
-        }
-    }, {
-        key: 'validPassword',
-        value: function validPassword(testPass) {
-            bcrypt.compare(testPass, this.passwordHash, function (err, res) {
-                if (err) {
-                    return err;
-                }
-                return res;
-            });
-        }
-    }, {
-        key: 'generateHash',
-        value: function generateHash(pass, saltRounds) {
-            bcrypt.genSalt(saltRounds, function (err, salt) {
-                //generate salt using saltRounds provided
-                bcrypt.hash(pass, salt, function (err, hash) {
-                    //generate hash using password and salt generated
-                    return hash; //returns hashed password
-                });
-            });
+
+            }, { sequelize: sequelize });
         }
     }, {
         key: 'associate',
+
+
+        // static validPassword(testPass) {
+        //     bcrypt.compare(testPass, this.passwordHash, (err, res) => {
+        //         if (err) {
+        //             return err;
+        //         }
+        //         return res;
+        //     });
+        // }
+
+
         value: function associate(models) {}
     }]);
 
