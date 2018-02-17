@@ -10,11 +10,13 @@
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Services/Passport.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/user.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
       </sourceFilesUrls>
@@ -28,11 +30,13 @@
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Services/Passport.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/user.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
     </CLASSES>

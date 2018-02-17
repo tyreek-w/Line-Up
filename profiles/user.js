@@ -37,30 +37,29 @@ import profiles from "./profileTypes";
 
 //Public variables and objects
 
-function User(parameters) {
-    let Object = parameters.Object;
+function User(info) {
 
     //creates a new user profile
     let state = {
 
+        id: info.id,
         type: profiles.profileType[0],
         status: profiles.status[0],
-        firstName: Object.firstName,
-        lastName: Object.lastName,
-        birthdate: Object.birthdate,
-        email: Object.email,
-        phoneNumber: Object.phoneNumber,
-        city: Object.city,
-        state: Object.state,
-        country: Object.country,
-        gender: Object.gender,
+        firstName: info.firstName,
+        lastName: info.lastName,
+        birthdate: info.birthdate,
+        email: info.email,
+        phoneNumber: info.phoneNumber,
+        city: info.city || null,
+        state: info.state || null,
+        country: info.country || null,
+        gender: info.gender,
         paymentInfo: null,
-        dateCreated: new Date()
+        password: info.password
 
-    };
-
-    return Object.assign({}, state);
+    }
+        return Object.assign({}, state);
 
 }
 
-export default User;
+module.exports = User;

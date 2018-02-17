@@ -41,11 +41,6 @@ module.exports = function (_Sequelize$Model) {
                     type: Sequelize.BOOLEAN,
                     allowNull: false,
                     defaultValue: false
-                },
-                paymentInfo: {
-                    type: Sequelize.STRING,
-                    allowNull: true,
-                    defaultValue: null
                 }
             }, { sequelize: sequelize });
         }

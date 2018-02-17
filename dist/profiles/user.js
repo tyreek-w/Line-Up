@@ -1,10 +1,6 @@
 "use strict";
 //declaration entity file for user model
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
 var _profileTypes = require("./profileTypes");
 
 var _profileTypes2 = _interopRequireDefault(_profileTypes);
@@ -46,28 +42,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //Public variables and objects
 
-function User(parameters) {
-    var Object = parameters.Object;
+function User(info) {
 
     //creates a new user profile
     var state = {
 
+        id: info.id,
         type: _profileTypes2.default.profileType[0],
         status: _profileTypes2.default.status[0],
-        firstName: Object.firstName,
-        lastName: Object.lastName,
-        birthdate: Object.birthdate,
-        email: Object.email,
-        phoneNumber: Object.phoneNumber,
-        city: Object.city,
-        state: Object.state,
-        country: Object.country,
-        gender: Object.gender,
+        firstName: info.firstName,
+        lastName: info.lastName,
+        birthdate: info.birthdate,
+        email: info.email,
+        phoneNumber: info.phoneNumber,
+        city: info.city || null,
+        state: info.state || null,
+        country: info.country || null,
+        gender: info.gender,
         paymentInfo: null,
-        dateCreated: new Date()
+        password: info.password
 
     };
-
     return Object.assign({}, state);
-}exports.default = User;
+}
+
+module.exports = User;
 //# sourceMappingURL=user.js.map

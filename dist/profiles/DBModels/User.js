@@ -11,6 +11,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Sequelize = require('sequelize');
+var bcrypt = require('bcrypt');
+var saltRounds = 4;
 
 module.exports = function (_Sequelize$Model) {
     _inherits(User, _Sequelize$Model);
@@ -24,6 +26,8 @@ module.exports = function (_Sequelize$Model) {
     _createClass(User, null, [{
         key: 'init',
         value: function init(sequelize) {
+            var _this2 = this;
+
             return _get(User.__proto__ || Object.getPrototypeOf(User), 'init', this).call(this, {
                 id: {
                     type: Sequelize.INTEGER,
@@ -50,14 +54,50 @@ module.exports = function (_Sequelize$Model) {
                     type: Sequelize.STRING,
                     allowNull: false
                 },
+                phoneNumber: {
+                    type: Sequelize.STRING
+                },
                 passwordHash: {
                     type: Sequelize.STRING,
                     allowNull: false
                 },
                 gender: {
                     type: Sequelize.TINYINT
+                },
+                paymentInfo: {
+                    type: Sequelize.STRING,
+                    allowNull: true,
+                    defaultValue: null
                 }
-            }, { sequelize: sequelize });
+            }, { sequelize: sequelize }, {
+                hooks: {
+                    beforeCreate: function beforeCreate(user, options) {
+                        console.log();
+                        user.password = _this2.generateHash(user.password, saltRounds);
+                    }
+                }
+            });
+        }
+    }, {
+        key: 'validPassword',
+        value: function validPassword(testPass) {
+            bcrypt.compare(testPass, this.passwordHash, function (err, res) {
+                if (err) {
+                    return err;
+                }
+                return res;
+            });
+        }
+    }, {
+        key: 'generateHash',
+        value: function generateHash(pass, saltRounds) {
+            bcrypt.genSalt(saltRounds, function (err, salt) {
+                //generate salt using saltRounds provided
+                bcrypt.hash(pass, salt, function (err, hash) {
+                    //generate hash using password and salt generated
+                    return hash; //returns hashed password
+                });
+            });
         }
     }, {
         key: 'associate',

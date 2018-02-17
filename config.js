@@ -10,7 +10,9 @@ let config = {
             password: "Oseriemen20",
             dialect: "mysql"
         },
-
+        session: {
+            secret: "tommy"
+        },
         server: {
             host: "127.0.0.1",
             port: 3000
