@@ -22,7 +22,8 @@
 
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const models = require('../DBModels/index');
+const models = require('../../profiles/DBModels/index');
+const middleware = require('./AuthMiddleware');
 
 passport.serializeUser((user, done) => {
     done(null, user.id);
@@ -43,8 +44,8 @@ passport.use('local-signin', new LocalStrategy({
     }, (req, username, password, done) => {
         let type = req.body.type || 'client';
         if (type === 'client') { //if type is client , proceeds to looking for a client User
-            let User = new models.User();
             //looks for user with matching email
+            let User = new models.User();
             models.User.findOne({where: {email: username}})
                 .then((user, err) => {
                     //respond with error if any are found
@@ -55,7 +56,7 @@ passport.use('local-signin', new LocalStrategy({
                         return done(null, false, {message: 'Incorrect email'})
                     }
                     //if password validation fails prompt user that password is incorrect
-                    if (!User.validatePassword(user, password)) {
+                    else if (!User.validatePassword(user, password)) {
                         console.log("User has incorrect password");
                         return done(null, false, {message: 'Incorrect password'})
                     }
@@ -89,8 +90,7 @@ passport.use('local-signup', new LocalStrategy({
     }, (req, username, password, done) => {
 
         if(req.body.type === 'client') {
-            let UserModel = models.User;
-            UserModel
+            models.User
                 .findOrCreate({ //look for existing user or create new
                     where: { email: username},
                     defaults: {

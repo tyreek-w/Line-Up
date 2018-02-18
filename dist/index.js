@@ -8,6 +8,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var cookieParser = require('cookie-parser');
+var RedisStore = require('connect-redis')(session);
 
 var profiles = require('./profiles/routes/index');
 
@@ -19,7 +20,10 @@ var app = express();
 //Express MiddleWare
 app.use(express.static('public'));
 app.use(session({
-    secret: config.session.secret,
+    store: new RedisStore({
+        url: config.redisStore.url
+    }),
+    secret: config.redisStore.secret,
     resave: false,
     saveUninitialized: false
 }));
@@ -31,7 +35,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //sets routes to appropriate names
-app.use("/", profiles);
+app.use("/profiles", profiles);
 
 //starts server and assigns it to a port
 app.listen(config.server.port, function (err) {

@@ -1,13 +1,12 @@
 "use strict";
 
 import express from "express";
-const userAC = require('../userActionController');
-const passport = require('../Services/Passport');
+const passport = require('../../Services/Passport/Passport');
 const router = express.Router();
 
 //route for all new User requests
 router.post("/createUser", passport.authenticate('local-signup', {failureRedirect: '/signup'}), function (req, res) {
-    res.redirect('/');
+    res.redirect('/profiles');
 });
 
 router.get('/signup', function (req, res) {
@@ -28,7 +27,7 @@ router.get('/', function (req, res) {
 
 });
 
-router.get('/logout', function(req, res) {
+router.get('/logout', function (req, res) {
     req.logout();
     console.log(req.isAuthenticated());
     res.send('successfully logged out');

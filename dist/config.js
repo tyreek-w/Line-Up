@@ -12,7 +12,8 @@ var config = {
             password: "Oseriemen20",
             dialect: "mysql"
         },
-        session: {
+        redisStore: {
+            url: "miscellaneous",
             secret: "tommy"
         },
         server: {

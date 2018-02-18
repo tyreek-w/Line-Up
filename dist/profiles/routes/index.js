@@ -6,13 +6,12 @@ var _express2 = _interopRequireDefault(_express);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var userAC = require('../userActionController');
-var passport = require('../Services/Passport');
+var passport = require('../../Services/Passport/Passport');
 var router = _express2.default.Router();
 
 //route for all new User requests
 router.post("/createUser", passport.authenticate('local-signup', { failureRedirect: '/signup' }), function (req, res) {
-    res.redirect('/');
+    res.redirect('/profiles');
 });
 
 router.get('/signup', function (req, res) {

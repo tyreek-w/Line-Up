@@ -23,7 +23,8 @@
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var models = require('../DBModels/index');
+var models = require('../../profiles/DBModels/index');
+var middleware = require('./AuthMiddleware');
 
 passport.serializeUser(function (user, done) {
     done(null, user.id);

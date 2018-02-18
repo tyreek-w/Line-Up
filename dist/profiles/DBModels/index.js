@@ -10,9 +10,6 @@ var Sequelize = require('sequelize');
 var env = process.env.NODE_ENV || 'development';
 var config = require('../../config')[env];
 
-var bcrypt = require('bcrypt');
-var saltRounds = 4;
-
 //Initializes db and uses config variables to populate verification fields
 var db = new Sequelize(config.database.db_name, config.database.username, config.database.password, {
     host: config.database.host,
@@ -51,9 +48,6 @@ try {
 
         typeof models[model].associate === 'function' && models[model].associate(models);
     }
-    //User Hooks
-
-    //using the user model encrypt and salt password before create
 } catch (err) {
     _didIteratorError = true;
     _iteratorError = err;
@@ -69,6 +63,12 @@ try {
     }
 }
 
+var bcrypt = require('bcrypt');
+var saltRounds = 4;
+
+//User Hooks
+
+//using the user model encrypt and salt password before create
 models.User.beforeCreate(function (user, options) {
     console.log("Storing the password");
     return new Promise(function (resolve, reject) {
