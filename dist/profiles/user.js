@@ -1,6 +1,11 @@
 "use strict";
 //declaration entity file for user model
-import profiles from "./profileTypes";
+
+var _profileTypes = require("./profileTypes");
+
+var _profileTypes2 = _interopRequireDefault(_profileTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // const canGenerateId = () => ({
 //
@@ -40,11 +45,11 @@ import profiles from "./profileTypes";
 function User(info) {
 
     //creates a new user profile
-    let state = {
+    var state = {
 
         id: info.id,
-        type: profiles.profileType[0],
-        status: profiles.status[0],
+        type: _profileTypes2.default.profileType[0],
+        status: _profileTypes2.default.status[0],
         firstName: info.firstName,
         lastName: info.lastName,
         birthdate: info.birthdate,
@@ -57,9 +62,9 @@ function User(info) {
         paymentInfo: null,
         password: info.password
 
-    }
-        return Object.assign({}, state);
-
+    };
+    return Object.assign({}, state);
 }
 
 module.exports = User;
+//# sourceMappingURL=user.js.map

@@ -1,0 +1,57 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/DBConnection.js" />
+        <item url="file://$PROJECT_DIR$/dist/Services/Passport/AuthMiddleware.js" />
+        <item url="file://$PROJECT_DIR$/dist/Services/Passport/Passport.js" />
+        <item url="file://$PROJECT_DIR$/dist/config.js" />
+        <item url="file://$PROJECT_DIR$/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/UserController.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Services/Passport.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/AuthMiddleware.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/Passport.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/user.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/DBConnection.js" />
+      <root url="file://$PROJECT_DIR$/dist/Services/Passport/AuthMiddleware.js" />
+      <root url="file://$PROJECT_DIR$/dist/Services/Passport/Passport.js" />
+      <root url="file://$PROJECT_DIR$/dist/config.js" />
+      <root url="file://$PROJECT_DIR$/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/UserController.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Services/Passport.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/AuthMiddleware.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/Passport.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Services/Passport/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/UserDBModel.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/barber.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/user.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
