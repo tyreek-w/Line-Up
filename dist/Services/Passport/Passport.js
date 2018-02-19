@@ -25,16 +25,18 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var models = require('../../profiles/DBModels/index');
 var middleware = require('./AuthMiddleware');
-
+//serializes user id to session on each auth request after signin
 passport.serializeUser(function (user, done) {
     done(null, user.id);
 });
-
+//removes user with id from session
 passport.deserializeUser(function (id, done) {
     models.User.findById(id).then(function (user, err) {
         done(err, user);
     });
 });
+
+passport.authenticateRoute = middleware;
 
 //Local signin strategy used for verfying and logging in existing users
 passport.use('local-signin', new LocalStrategy({
@@ -45,7 +47,7 @@ passport.use('local-signin', new LocalStrategy({
     var type = req.body.type || 'client';
     if (type === 'client') {
         //if type is client , proceeds to looking for a client User
-        //looks for user with matching email
+        //looks for client with matching email
         var User = new models.User();
         models.User.findOne({ where: { email: username } }).then(function (user, err) {
             //respond with error if any are found

@@ -22,7 +22,15 @@
         <item url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/barber/get_barber.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/barber/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/get_user.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/login.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/logout.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/new.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/signup.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/userId.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/user.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
       </sourceFilesUrls>
@@ -48,7 +56,15 @@
       <root url="file://$PROJECT_DIR$/dist/profiles/barbershop.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/barber/get_barber.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/barber/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/get_user.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/login.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/logout.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/new.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/signup.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/userId.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/user.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/userActionController.js" />
     </CLASSES>
