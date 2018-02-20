@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-var _express = require("express");
+var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
@@ -10,6 +10,7 @@ var passport = require('../../../Services/Passport/Passport'); //index manifest 
 
 var router = _express2.default.Router();
 
+router.post('/delete/:id', require('./delete'));
 router.post("/new", passport.authenticate('local-signup', { failureRedirect: '/signup' }), require('./new'));
 router.post('/login', passport.authenticate('local-signin', { failureRedirect: '/signin' }, { successRedirect: '/' }), require('./login'));
 router.get('/:id', require('./get_barber'));

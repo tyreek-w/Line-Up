@@ -1,6 +1,7 @@
 'use strict';
-const dbmain = require('../../config/DB/DBmain');
-const Sequelize = dbmain.Seq();
+
+var dbmain = require('../../config/DB/DBmain');
+var Sequelize = dbmain.Seq();
 
 module.exports = {
     model: {
@@ -19,10 +20,7 @@ module.exports = {
             defaultValue: false
         }
     },
-    relations: {
-
-    },
-    options: {
-
-    }
+    relations: {},
+    options: {}
 };
+//# sourceMappingURL=Haircut.js.map

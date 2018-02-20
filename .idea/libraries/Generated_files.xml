@@ -6,6 +6,13 @@
         <item url="file://$PROJECT_DIR$/dist/Services/Passport/AuthMiddleware.js" />
         <item url="file://$PROJECT_DIR$/dist/Services/Passport/Passport.js" />
         <item url="file://$PROJECT_DIR$/dist/config.js" />
+        <item url="file://$PROJECT_DIR$/dist/config/DB/DBmain.js" />
+        <item url="file://$PROJECT_DIR$/dist/config/DB/DBmodels.js" />
+        <item url="file://$PROJECT_DIR$/dist/config/DB/config_db.js" />
+        <item url="file://$PROJECT_DIR$/dist/config/config_db.js" />
+        <item url="file://$PROJECT_DIR$/dist/config/config_env.js" />
+        <item url="file://$PROJECT_DIR$/dist/haircuts/DBModels/Haircut.js" />
+        <item url="file://$PROJECT_DIR$/dist/haircuts/DBModels/index.js" />
         <item url="file://$PROJECT_DIR$/dist/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
@@ -24,6 +31,7 @@
         <item url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/barber/get_barber.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/barber/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/routes/delete.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/get_user.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/routes/login.js" />
@@ -40,6 +48,13 @@
       <root url="file://$PROJECT_DIR$/dist/Services/Passport/AuthMiddleware.js" />
       <root url="file://$PROJECT_DIR$/dist/Services/Passport/Passport.js" />
       <root url="file://$PROJECT_DIR$/dist/config.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/DB/DBmain.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/DB/DBmodels.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/DB/config_db.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/config_db.js" />
+      <root url="file://$PROJECT_DIR$/dist/config/config_env.js" />
+      <root url="file://$PROJECT_DIR$/dist/haircuts/DBModels/Haircut.js" />
+      <root url="file://$PROJECT_DIR$/dist/haircuts/DBModels/index.js" />
       <root url="file://$PROJECT_DIR$/dist/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
@@ -58,6 +73,7 @@
       <root url="file://$PROJECT_DIR$/dist/profiles/profileTypes.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/barber/get_barber.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/barber/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/routes/delete.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/get_user.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/index.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/routes/login.js" />

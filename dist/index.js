@@ -3,7 +3,7 @@
 var express = require('express');
 var volleyball = require('volleyball');
 var env = process.env.NODE_ENV || 'development';
-var config = require('./config')[env];
+var config = require('./config/config_env')[env];
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var passport = require('passport');
@@ -12,8 +12,8 @@ var RedisStore = require('connect-redis')(session);
 
 var profiles = require('./profiles/routes/index');
 
-//import db
-var db = require("./profiles/DBModels/index");
+// //import db
+// const db = require("./config/config_db");
 //init app to express
 var app = express();
 

@@ -21,3 +21,4 @@ function Barber(userId, profileObj) {
   }
 
 export default Barber;
+
