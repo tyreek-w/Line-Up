@@ -11,9 +11,15 @@ var cookieParser = require('cookie-parser');
 var RedisStore = require('connect-redis')(session);
 
 var profiles = require('./profiles/routes/index');
+var barber_profiles = require('./profiles/routes/barber/index');
+var reviews = require('./reviews/routes/index');
+var haircuts = require('./haircuts/routes/index');
+var Hairstyle = require('./Hairstyle/routes/index');
+var photos = require('./photos/routes/index');
 
 // //import db
-// const db = require("./config/config_db");
+var dbmain = require("./config/DB/DBmain");
+dbmain.setup(__dirname + '/DBModels');
 //init app to express
 var app = express();
 
@@ -36,6 +42,11 @@ app.use(passport.session());
 
 //sets routes to appropriate names
 app.use("/profiles", profiles);
+app.use('/profiles/barbers', barber_profiles);
+app.use('/reviews', reviews);
+app.use('/haircuts', haircuts);
+app.use('/hairstyles', Hairstyle);
+app.use('/photos', photos);
 
 //starts server and assigns it to a port
 app.listen(config.server.port, function (err) {

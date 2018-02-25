@@ -2,6 +2,6 @@
 //route used for creating a new user
 
 module.exports = function (req, res) {
-    res.redirect('Please enter your info to sign up');
+    res.send('Welcome to development');
 };
 //# sourceMappingURL=new.js.map

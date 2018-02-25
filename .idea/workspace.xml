@@ -1,30 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="Added babel env module">
-      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/DBModels/Haircut.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/DBModels/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/routes/delete.js" />
+    <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="Added new DB Models and routes">
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/BarberShop.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/Review.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DBModels/Service.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hairstyle/Controllers/HairstyleController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hairstyle/routes/delete_Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hairstyle/routes/get_Hairstyles.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hairstyle/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Hairstyle/routes/new_Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/Controllers/HaircutController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/routes/delete_Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/routes/get_Haircuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/routes/get_Haircuts_by_hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/haircuts/routes/new_Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/Controllers/HairtypeController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/routes/get_Hairtypes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/routes/get_Hairtypes_by_type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/routes/new_Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/hairtypes/routes/remove_Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/photos/Controllers/PhotoController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/photos/routes/delete_Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/photos/routes/get_Photos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/photos/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/photos/routes/new_Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/Controllers/BarberController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/Controllers/BarberShopController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/profiles/Controllers/UserController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/Controllers/ReviewController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/get_Reviews.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/get_comments.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/get_likes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/get_ratings.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/post_Comment.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/post_Like.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reviews/routes/post_Rating.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/skrubinator.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/skrubinator.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Services/Passport/Passport.js" afterPath="$PROJECT_DIR$/Services/Passport/Passport.js" />
+      <change beforePath="$PROJECT_DIR$/dist/Services/Passport/Passport.js" afterPath="$PROJECT_DIR$/dist/Services/Passport/Passport.js" />
+      <change beforePath="$PROJECT_DIR$/dist/Services/Passport/Passport.js.map" afterPath="$PROJECT_DIR$/dist/Services/Passport/Passport.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/haircuts/DBModels/index.js" afterPath="$PROJECT_DIR$/dist/haircuts/DBModels/index.js" />
+      <change beforePath="$PROJECT_DIR$/dist/haircuts/DBModels/index.js.map" afterPath="$PROJECT_DIR$/dist/haircuts/DBModels/index.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" afterPath="$PROJECT_DIR$/dist/index.js" />
       <change beforePath="$PROJECT_DIR$/dist/index.js.map" afterPath="$PROJECT_DIR$/dist/index.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Barber.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/User.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/User.js" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/User.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/User.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/index.js" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/index.js" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/DBModels/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/index.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/profiles/barber.js.map" afterPath="$PROJECT_DIR$/dist/profiles/barber.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/routes/barber/index.js" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/index.js" />
       <change beforePath="$PROJECT_DIR$/dist/profiles/routes/barber/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/index.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/get_user.js" afterPath="$PROJECT_DIR$/dist/profiles/routes/get_user.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/get_user.js.map" afterPath="$PROJECT_DIR$/dist/profiles/routes/get_user.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/index.js" afterPath="$PROJECT_DIR$/dist/profiles/routes/index.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/index.js.map" afterPath="$PROJECT_DIR$/dist/profiles/routes/index.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/new.js" afterPath="$PROJECT_DIR$/dist/profiles/routes/new.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/routes/new.js.map" afterPath="$PROJECT_DIR$/dist/profiles/routes/new.js.map" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/userActionController.js" afterPath="$PROJECT_DIR$/dist/profiles/userActionController.js" />
+      <change beforePath="$PROJECT_DIR$/dist/profiles/userActionController.js.map" afterPath="$PROJECT_DIR$/dist/profiles/userActionController.js.map" />
+      <change beforePath="$PROJECT_DIR$/haircuts/DBModels/Haircut.js" afterPath="$PROJECT_DIR$/DBModels/Haircut.js" />
+      <change beforePath="$PROJECT_DIR$/haircuts/DBModels/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/haircuts/hairStyle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/haircuts/haircut.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hairtypes/hairtype.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/DBModels/Barber.js" afterPath="$PROJECT_DIR$/profiles/DBModels/Barber.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/DBModels/User.js" afterPath="$PROJECT_DIR$/profiles/DBModels/User.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/DBModels/index.js" afterPath="$PROJECT_DIR$/profiles/DBModels/index.js" />
-      <change beforePath="$PROJECT_DIR$/profiles/barber.js" afterPath="$PROJECT_DIR$/profiles/barber.js" />
+      <change beforePath="$PROJECT_DIR$/payments/paymentInfo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/photos/photo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/DBModels/Barber.js" afterPath="$PROJECT_DIR$/DBModels/Barber.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/DBModels/User.js" afterPath="$PROJECT_DIR$/DBModels/User.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/DBModels/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/barber.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/barberMemberInfo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/barbershop.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/profileTypes.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/profiles/routes/barber/index.js" afterPath="$PROJECT_DIR$/profiles/routes/barber/index.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/routes/get_user.js" afterPath="$PROJECT_DIR$/profiles/routes/get_user.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/routes/index.js" afterPath="$PROJECT_DIR$/profiles/routes/index.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/routes/new.js" afterPath="$PROJECT_DIR$/profiles/routes/new.js" />
+      <change beforePath="$PROJECT_DIR$/profiles/user.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/profiles/userActionController.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/reviews/reviews.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,136 +100,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/profiles/user.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="285">
-                    <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-                    <folding>
-                      <element signature="e#95#128#0" expanded="false" />
-                      <element signature="e#575#624#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="barber.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/profiles/barber.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="360">
-                    <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profiles/DBModels/index.js">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="1081">
+              <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haircuts/DBModels/index.js">
+      <file leaf-file-name="PhotoController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photos/Controllers/PhotoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="69">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBmain.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/DB/DBmain.js">
+      <file leaf-file-name="BarberController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/profiles/Controllers/BarberController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_env.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config_env.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Haircut.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haircuts/DBModels/Haircut.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profiles/DBModels/User.js">
+        <entry file="file://$PROJECT_DIR$/DBModels/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="166">
+              <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BarberShop.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DBModels/BarberShop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="610">
+              <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Barber.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profiles/DBModels/Barber.js">
+        <entry file="file://$PROJECT_DIR$/DBModels/Barber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="309">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="haircut.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haircuts/haircut.js">
+      <file leaf-file-name="new_Haircut.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haircuts/routes/new_Haircut.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/DB/config_db.js">
+      <file leaf-file-name="get_Haircuts_by_hairtype.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/haircuts/routes/get_Haircuts_by_hairtype.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            <state relative-caret-position="138">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="Hairtype.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DBModels/Hairtype.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="167">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Haircut.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DBModels/Haircut.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -181,51 +212,67 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Oseriemen Ivbaze &lt;29639467+skrubinator88@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hairtypes/hairtype.js" />
-        <option value="$PROJECT_DIR$/profiles/barberMemberInfo.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/profiles/barbershop.js" />
-        <option value="$PROJECT_DIR$/profiles/BarberDBModel.js" />
-        <option value="$PROJECT_DIR$/profiles/UserDBModel.js" />
-        <option value="$PROJECT_DIR$/DBConnection.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/DBConnection.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/profiles/profileTypes.js" />
-        <option value="$PROJECT_DIR$/profiles/index.js" />
-        <option value="$PROJECT_DIR$/profiles/user.js" />
-        <option value="$PROJECT_DIR$/profiles/userActionController.js" />
-        <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/UserController.js" />
-        <option value="$PROJECT_DIR$/profiles/Services/Passport.js" />
-        <option value="$PROJECT_DIR$/profiles/Services/Passport/AuthMiddleware.js" />
-        <option value="$PROJECT_DIR$/profiles/Services/Passport/Passport.js" />
-        <option value="$PROJECT_DIR$/profiles/Services/Passport/index.js" />
-        <option value="$PROJECT_DIR$/Services/Passport/AuthMiddleware.js" />
-        <option value="$PROJECT_DIR$/Services/Passport/Passport.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/logout.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/userId.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/login.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/signup.js" />
+        <option value="$PROJECT_DIR$/profiles/Controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/profiles/routes/get_user.js" />
         <option value="$PROJECT_DIR$/profiles/routes/index.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/barber/get_barber.js" />
-        <option value="$PROJECT_DIR$/profiles/routes/delete.js" />
+        <option value="$PROJECT_DIR$/Services/Passport/Passport.js" />
+        <option value="$PROJECT_DIR$/profiles/Controllers/BarberShopController.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/post_Review.js" />
+        <option value="$PROJECT_DIR$/hairtypes/Controllers/HairtypeController.js" />
+        <option value="$PROJECT_DIR$/photos/Controllers.js" />
+        <option value="$PROJECT_DIR$/reviews/Controllers/ReviewController.js" />
+        <option value="$PROJECT_DIR$/Hairstyle/Controllers/HairstyleController.js" />
         <option value="$PROJECT_DIR$/profiles/routes/barber/index.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/index.js" />
-        <option value="$PROJECT_DIR$/config/config_db.js" />
-        <option value="$PROJECT_DIR$/haircuts/DBModels/index.js" />
-        <option value="$PROJECT_DIR$/config/DB/DBmodels.js" />
+        <option value="$PROJECT_DIR$/Hairstyle/routes/index.js" />
+        <option value="$PROJECT_DIR$/photos/routes/index.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/get_Haircuts_by_price.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/delete_Haircut.js" />
+        <option value="$PROJECT_DIR$/Hairstyle/routes/get_Hairstyles.js" />
+        <option value="$PROJECT_DIR$/Hairstyle/routes/delete_Hairstyle.js" />
+        <option value="$PROJECT_DIR$/Hairstyle/routes/new_Hairstyle.js" />
+        <option value="$PROJECT_DIR$/hairtypes/routes/remove_Hairtype.js" />
+        <option value="$PROJECT_DIR$/hairtypes/routes/new_Hairtype.js" />
+        <option value="$PROJECT_DIR$/hairtypes/routes/get_Hairtypes.js" />
+        <option value="$PROJECT_DIR$/hairtypes/routes/index.js" />
+        <option value="$PROJECT_DIR$/hairtypes/routes/get_Hairtypes_by_type.js" />
+        <option value="$PROJECT_DIR$/photos/routes/new_Photo.js" />
+        <option value="$PROJECT_DIR$/photos/routes/get_Photos.js" />
+        <option value="$PROJECT_DIR$/photos/routes/delete_Photo.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/get_Reviews.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/get_ratings.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/get_likes.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/get_comments.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/post_Comment.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/post_Like.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/post_Rating.js" />
+        <option value="$PROJECT_DIR$/reviews/routes/index.js" />
+        <option value="$PROJECT_DIR$/DBModels/BarberShop.js" />
         <option value="$PROJECT_DIR$/config/DB/DBmain.js" />
-        <option value="$PROJECT_DIR$/profiles/barber.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/User.js" />
-        <option value="$PROJECT_DIR$/profiles/DBModels/Barber.js" />
-        <option value="$PROJECT_DIR$/config/DB/config_db.js" />
-        <option value="$PROJECT_DIR$/haircuts/DBModels/Haircut.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/new_Haircut.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/get_Haircuts.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/index.js" />
+        <option value="$PROJECT_DIR$/haircuts/routes/get_Haircuts_by_hairtype.js" />
+        <option value="$PROJECT_DIR$/DBModels/Service.js" />
+        <option value="$PROJECT_DIR$/DBModels/Review.js" />
+        <option value="$PROJECT_DIR$/DBModels/Photo.js" />
+        <option value="$PROJECT_DIR$/DBModels/Barber.js" />
+        <option value="$PROJECT_DIR$/DBModels/Hairstyle.js" />
+        <option value="$PROJECT_DIR$/DBModels/Haircut.js" />
+        <option value="$PROJECT_DIR$/DBModels/Hairtype.js" />
+        <option value="$PROJECT_DIR$/DBModels/User.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/photos/Controllers/PhotoController.js" />
+        <option value="$PROJECT_DIR$/profiles/Controllers/BarberController.js" />
       </list>
     </option>
   </component>
@@ -241,9 +288,13 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
     <option name="y" value="23" />
-    <option name="width" value="806" />
+    <option name="width" value="1147" />
     <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -260,6 +311,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,62 +320,16 @@
               <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
               <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="DB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="haircuts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="haircuts" type="462c0819:PsiDirectoryNode" />
-              <item name="DBModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles" type="462c0819:PsiDirectoryNode" />
-              <item name="DBModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-              <item name="Passport" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="HbShouldOpenHtmlAsHb" value="disabled" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -339,16 +346,18 @@
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="nodejs.jest.jest_package" value="" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config/DB" />
       <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/profiles/Services/Passport" />
-      <recent name="$PROJECT_DIR$/profiles/routes" />
+      <recent name="$PROJECT_DIR$/profiles/DBModels" />
+      <recent name="$PROJECT_DIR$/profiles/DBModels/Haircuts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/haircuts/routes" />
       <recent name="$PROJECT_DIR$/profiles" />
     </key>
   </component>
@@ -364,7 +373,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.UserController.js">
+    <configuration name="UserController.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="UserController.js" working-dir="$PROJECT_DIR$/profiles/Controllers" />
     <configuration name="barber.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="barber.js" working-dir="$PROJECT_DIR$/profiles" />
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
@@ -378,9 +388,14 @@
       <arguments />
       <envs />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.barber.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.UserController.js" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.barber.js" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.UserController.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.barber.js" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +419,11 @@
       <workItem from="1518804641059" duration="4015000" />
       <workItem from="1518883542697" duration="56000" />
       <workItem from="1518883649756" duration="24075000" />
-      <workItem from="1519052467385" duration="7612000" />
+      <workItem from="1519052467385" duration="15750000" />
+      <workItem from="1519147609997" duration="541000" />
+      <workItem from="1519148193956" duration="8874000" />
+      <workItem from="1519312798625" duration="12262000" />
+      <workItem from="1519408481024" duration="15097000" />
     </task>
     <task id="LOCAL-00001" summary="Added babel env module">
       <created>1517772081083</created>
@@ -417,7 +436,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107766000" />
+    <option name="totallyTimeSpent" value="152678000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,25 +448,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="806" height="810" extended-state="0" />
-    <editor active="true" />
+    <frame x="53" y="23" width="1147" height="810" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1834395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32163742" sideWeight="0.5053996" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32474965" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33861673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32331902" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33762518" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2746781" sideWeight="0.49460045" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22291297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32761088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31330472" sideWeight="0.49460045" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -477,323 +497,104 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added babel env module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added babel env module" />
+    <MESSAGE value="Added new DB Models and routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new DB Models and routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/profiles/index.js">
+    <entry file="file://$PROJECT_DIR$/hairtypes/Controllers/HairtypeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/profiles/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#95#128#0" expanded="false" />
-            <element signature="e#575#624#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hairtypes/hairtype.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="69">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/user.js">
+    <entry file="file://$PROJECT_DIR$/profiles/Controllers/BarberShopController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#95#128#0" expanded="false" />
-            <element signature="e#575#624#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barberMemberInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="92">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/profiles/Controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="83" lean-forward="false" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+        <state relative-caret-position="276">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hairtypes/hairtype.js">
+    <entry file="file://$PROJECT_DIR$/reviews/Controllers/ReviewController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/node_modules/babel-cli/node_modules/babel-core/lib/transformation/file/options/option-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="292" column="18" lean-forward="false" selection-start-line="292" selection-start-column="18" selection-end-line="292" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barberMemberInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/profiles/barber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/profiles/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/profiles/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/BarberDBModel.js" />
-    <entry file="file://$PROJECT_DIR$/dist/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/DBConnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/profileTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barbershop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/userActionController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="58" column="1" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="58" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/DBModels/UserController.js" />
-    <entry file="file://$PROJECT_DIR$/Services/Passport/index.js" />
-    <entry file="file://$PROJECT_DIR$/Services/Passport/AuthMiddleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/Passport/Passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/barber/get_barber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="92">
           <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/user.js">
+    <entry file="file://$PROJECT_DIR$/Hairstyle/Controllers/HairstyleController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding>
-            <element signature="e#95#128#0" expanded="false" />
-            <element signature="e#575#624#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/get_user.js">
+    <entry file="file://$PROJECT_DIR$/photos/photo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/routes/barber/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/routes/delete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haircuts/haircut.js">
+    <entry file="file://$PROJECT_DIR$/hairtypes/hairtype.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -801,74 +602,346 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/barber.js">
+    <entry file="file://$PROJECT_DIR$/profiles/routes/get_user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/DB/config_db.js">
+    <entry file="file://$PROJECT_DIR$/haircuts/routes/delete_Haircut.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        <state relative-caret-position="69">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haircuts/DBModels/index.js">
+    <entry file="file://$PROJECT_DIR$/Hairstyle/routes/get_Hairstyles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hairstyle/routes/delete_Hairstyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hairstyle/routes/new_Hairstyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hairstyle/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hairtypes/routes/new_Hairtype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hairtypes/routes/remove_Hairtype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hairtypes/routes/get_Hairtypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hairtypes/routes/get_Hairtypes_by_type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hairtypes/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/routes/new_Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/routes/get_Photos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/routes/delete_Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/get_comments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/get_likes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/get_ratings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/get_Reviews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/post_Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/post_Like.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/post_Rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/config_env.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="299">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/DBModels/User.js">
+    <entry file="file://$PROJECT_DIR$/config/DB/config_db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/DBModels/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/DBModels/Barber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haircuts/DBModels/Haircut.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/DB/DBmain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="337">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haircuts/routes/get_Haircuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haircuts/Controllers/HaircutController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haircuts/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Hairstyle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Haircut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haircuts/routes/get_Haircuts_by_hairtype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Hairtype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/BarberShop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DBModels/Barber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haircuts/routes/new_Haircut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/Controllers/PhotoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/Controllers/BarberController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>

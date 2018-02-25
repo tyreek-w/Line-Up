@@ -20,7 +20,9 @@ module.exports = {
             defaultValue: false
         }
     },
-    relations: {},
+    relations: {
+        belongsTo: "User"
+    },
     options: {}
 };
 //# sourceMappingURL=Barber.js.map
