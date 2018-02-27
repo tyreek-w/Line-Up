@@ -1,6 +1,6 @@
 "use strict";
 
-var models = require('./DBModels/index');
+var models = require('../DBModels/index');
 
 function createProfile(Object, response) {
     var err = "";

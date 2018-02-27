@@ -2,6 +2,7 @@
   <dictionary name="skrubinator">
     <words>
       <w>bcrypt</w>
+      <w>hairtype</w>
       <w>sequelize</w>
     </words>
   </dictionary>

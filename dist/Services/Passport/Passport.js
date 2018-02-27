@@ -20,21 +20,24 @@
 * Local SignUp
 *   - Used to verify users when attempting to create a new account with username or email/password
 */
-
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var models = require('../../profiles/DBModels/index');
+var dbmain = require('../../config/DB/DBmain');
+var User = require('../../profiles/Controllers/UserController');
 var middleware = require('./AuthMiddleware');
-
+//serializes user id to session on each auth request after signin
 passport.serializeUser(function (user, done) {
     done(null, user.id);
 });
-
+//removes user with id from session
 passport.deserializeUser(function (id, done) {
-    models.User.findById(id).then(function (user, err) {
+    var tempUser = User.use();
+    tempUser.findById(id).then(function (user, err) {
         done(err, user);
     });
 });
+
+passport.authenticateRoute = middleware;
 
 //Local signin strategy used for verfying and logging in existing users
 passport.use('local-signin', new LocalStrategy({
@@ -45,9 +48,9 @@ passport.use('local-signin', new LocalStrategy({
     var type = req.body.type || 'client';
     if (type === 'client') {
         //if type is client , proceeds to looking for a client User
-        //looks for user with matching email
-        var User = new models.User();
-        models.User.findOne({ where: { email: username } }).then(function (user, err) {
+        //looks for client with matching email
+        var tempUser = new User.use();
+        tempUser.findOne({ where: { email: username } }).then(function (user, err) {
             //respond with error if any are found
             if (err) {
                 return done(err);
@@ -58,13 +61,14 @@ passport.use('local-signin', new LocalStrategy({
                 return done(null, false, { message: 'Incorrect email' });
             }
             //if password validation fails prompt user that password is incorrect
-            else if (!User.validatePassword(user, password)) {
-                    console.log("User has incorrect password");
-                    return done(null, false, { message: 'Incorrect password' });
-                } else {
-                    //if nothing fails, complete request and respond with user object
-                    return done(null, user);
-                }
+            if (tempUser.validatePassword(user, password)) {
+                console.log("User has incorrect password");
+                return done(null, false, { message: 'Incorrect password' });
+            }
+            if (tempUser.validatePassword(user, password)) {
+                //if nothing fails, complete request and respond with user object
+                return done(null, user);
+            }
         });
     } else if (type === 'barber' && req.userId) {
         //if type is barber and userid has been passed proceeds to looking for barber
@@ -92,7 +96,8 @@ passport.use('local-signup', new LocalStrategy({
 }, function (req, username, password, done) {
 
     if (req.body.type === 'client') {
-        models.User.findOrCreate({ //look for existing user or create new
+        var tempUser = User.use();
+        tempUser.findOrCreate({ //look for existing user or create new
             where: { email: username },
             defaults: {
                 id: req.body.id, //This id is generated somewhere else (only provided by req in dev)
