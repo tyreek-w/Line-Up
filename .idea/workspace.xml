@@ -1,7 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="">
+    <list default="true" id="66285e0f-c2d7-47e8-b69a-e6983b9d8b78" name="Default" comment="Filled empty router files, and added vue frontend">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Barber.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Barber.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/BarberShop.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/BarberShop.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Haircut.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Hairstyle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Hairtype.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Location.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Location.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Photo.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Review.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Review.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Service.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/Service.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/User.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/User.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/DBModels/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/Controllers/HairstyleController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/Controllers/HairstyleController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/delete_Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/delete_Hairstyle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/get_Hairstyles.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/get_Hairstyles.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/new_Hairstyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/Hairstyle/routes/new_Hairstyle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/build/build.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/app.b22ce679862c47a75225.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/app.b22ce679862c47a75225.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/app.e32159aff018b8bdcc28.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/app.e32159aff018b8bdcc28.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/manifest.2ae2e69a05c33dfc65f8.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/vendor.63ca09068ac41b17bc44.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/vendor.63ca09068ac41b17bc44.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/vendor.7fed9fa7b7ba482410b7.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/frontend/dist/static/js/vendor.7fed9fa7b7ba482410b7.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/Controllers/HaircutController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/Controllers/HaircutController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/delete_Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/delete_Haircut.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts_by_hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts_by_hairtype.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts_by_price.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/get_Haircuts_by_price.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/new_Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/haircuts/routes/new_Haircut.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/Controllers/HairtypeController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/Controllers/HairtypeController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/get_Hairtypes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/get_Hairtypes.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/get_Hairtypes_by_type.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/get_Hairtypes_by_type.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/new_Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/new_Hairtype.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/remove_Hairtype.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/hairtypes/routes/remove_Hairtype.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/Controllers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/Controllers.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/Controllers/PhotoController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/Controllers/PhotoController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/delete_Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/delete_Photo.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/get_Photos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/get_Photos.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/new_Photo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/photos/routes/new_Photo.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/BarberController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/BarberController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/BarberShopController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/BarberShopController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/UserController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/Controllers/UserController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Haircut.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Haircuts/Haircut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/DBModels/Haircuts/Haircut.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/authMiddleWare.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/authMiddleWare.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/delete.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/delete.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/get_barbers_by_location.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/get_barbers_by_location.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/login.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/login.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/new.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/barber/new.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/edit_user.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/profiles/routes/edit_user.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/Controllers/ReviewController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/Controllers/ReviewController.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_Reviews.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_Reviews.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_comments.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_comments.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_likes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_likes.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_ratings.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/get_ratings.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/index.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Comment.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Comment.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Like.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Like.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Rating.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Rating.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Review.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/reviews/routes/post_Review.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.babelrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.eslintignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/.postcssrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/check-versions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/vue-loader.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/webpack.base.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/webpack.dev.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/build/webpack.prod.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/App.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/assets/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/static/.gitkeep" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -251,12 +399,6 @@
               <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Line-Up" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Line-Up" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -381,7 +523,7 @@
       <workItem from="1521311926381" duration="28000" />
       <workItem from="1521666067264" duration="1101000" />
       <workItem from="1522590519393" duration="1288000" />
-      <workItem from="1522591919841" duration="11488000" />
+      <workItem from="1522591919841" duration="11646000" />
     </task>
     <task id="LOCAL-00001" summary="Added babel env module">
       <created>1517772081083</created>
@@ -411,11 +553,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522618799111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Filled empty router files, and added vue frontend">
+      <created>1522618805493</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522618805493</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170085000" />
+    <option name="totallyTimeSpent" value="170243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,12 +578,12 @@
   <component name="ToolWindowManager">
     <frame x="649" y="23" width="682" height="807" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33888048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33888048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33762518" sideWeight="0.5062167" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32303372" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33567417" sideWeight="0.4937833" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33567417" sideWeight="0.4937833" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2738764" sideWeight="0.49460045" order="7" side_tool="false" content_ui="tabs" />

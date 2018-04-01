@@ -1,0 +1,9 @@
+'use strict';
+
+module.exports = function (req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    }
+    res.redirect('/profiles/login');
+};
+//# sourceMappingURL=authMiddleWare.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../profiles/routes/edit_user.js"],"names":["module","exports","req","res","send"],"mappings":"AAAA;;AACAA,OAAOC,OAAP,GAAiB,UAASC,GAAT,EAAcC,GAAd,EAAmB;AAChCA,QAAIC,IAAJ,CAAS,cAAT;AACH,CAFD","file":"edit_user.js","sourcesContent":["\"use strict\";\nmodule.exports = function(req, res) {\n    res.send('user deleted');\n};"]}

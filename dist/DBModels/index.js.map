@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../DBModels/index.js"],"names":["path","require","dbmain","setup","__dirname"],"mappings":";;AAAA,IAAMA,OAAOC,QAAQ,MAAR,CAAb;AACA,IAAMC,SAASD,QAAQ,qBAAR,CAAf;;AAEAC,OAAOC,KAAP,CAAaC,SAAb","file":"index.js","sourcesContent":["const path = require(\"path\");\nconst dbmain = require('../config/DB/DBmain');\n\ndbmain.setup(__dirname);"]}
