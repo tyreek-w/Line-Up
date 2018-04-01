@@ -6,6 +6,7 @@ const config = require('./config/config_env')[env];
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const passport = require('passport');
+const nodemon = require('nodemon');
 const cookieParser = require('cookie-parser');
 const RedisStore = require('connect-redis')(session);
 
@@ -23,6 +24,7 @@ dbmain.setup(__dirname + '/DBModels');
 const app = express();
 
 //Express MiddleWare
+app.use(nodemon);
 app.use(express.static('public'));
 app.use(session({
     store: new RedisStore({
