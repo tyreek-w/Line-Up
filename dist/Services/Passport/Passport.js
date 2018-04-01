@@ -65,10 +65,12 @@ passport.use('local-signin', new LocalStrategy({
                 console.log("User has incorrect password");
                 return done(null, false, { message: 'Incorrect password' });
             }
-            if (tempUser.validatePassword(user, password)) {
-                //if nothing fails, complete request and respond with user object
-                return done(null, user);
-            }
+            // if(tempUser.validatePassword(user, password)){
+            else {
+                    //if nothing fails, complete request and respond with user object
+                    console.log("login successful");
+                    return done(null, user);
+                }
         });
     } else if (type === 'barber' && req.userId) {
         //if type is barber and userid has been passed proceeds to looking for barber
@@ -97,6 +99,7 @@ passport.use('local-signup', new LocalStrategy({
 
     if (req.body.type === 'client') {
         var tempUser = User.use();
+        console.log('checking for user existence...');
         tempUser.findOrCreate({ //look for existing user or create new
             where: { email: username },
             defaults: {

@@ -1,4 +1,4 @@
-//index manifest file for all profile routes
+//index manifest file for all haircut routes
 import express from "express";
 const passport = require('../../Services/Passport/Passport');
 const router = express.Router();

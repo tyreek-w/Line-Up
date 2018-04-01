@@ -18,20 +18,16 @@ module.exports = {
             allowNull: false,
             defaultValue: false
         },
-        address: {
-            type: Sequelize.STRING,
-            allowNull: false
-        },
         description: {
             type: Sequelize.TEXT,
             allowNull: true
         }
     },
     relations: {
-        belongsTo: "User",
         hasMany: "Barber",
         hasMany: "Review",
-        hasMany: "Photo"
+        hasMany: "Photo",
+        BelongsTo: "Location"
     },
     options: {
         freezeTableName: true

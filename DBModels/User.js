@@ -51,7 +51,8 @@ module.exports = {
         hasMany: "Haircut",
         hasMany: "Review",
         BelongsTo: "Hairtype",
-        hasOne: "Photo"
+        hasOne: "Photo",
+        hasOne: "Location"
     },
     options: {
         freezeTableName: true,

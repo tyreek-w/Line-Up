@@ -26,8 +26,7 @@ module.exports = {
     },
     relations: {
         hasMany: "User",
-        hasMany: "Haircut",
-        belongsToMany: ("Hairstyle", { through: 'Hairstyle_Hairtype'})
+        hasMany: "Haircut"
     },
     options: {
         freezeTableName: true
