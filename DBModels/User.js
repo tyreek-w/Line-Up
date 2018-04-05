@@ -62,7 +62,7 @@ module.exports = {
                     bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
                         if (err) return reject(err);
                         bcrypt.hash(model.passwordHash, salt, (err, hash) => { //generate hash using password and salt generated
-                            console.log("Getting password encrypted");
+                            console.log("Getting password encrypted...");
                             model.passwordHash = hash;
                             return resolve(model, options)//sets user password to hash
                         });

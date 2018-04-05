@@ -91,9 +91,9 @@ passport.use('local-signup', new LocalStrategy({
         usernameField: 'email',
         passwordField: 'password',
         passReqToCallback: true
-    }, (req, username, password, done) => {
-
-        if(req.body.type === 'client') {
+    }, (req, username, password, done, err) => {
+    console.log('checking credentials');
+        if(req.body.type === 'client' || req.body.type == null) {
             const tempUser = User.use();
             console.log('checking for user existence...');
             tempUser
@@ -120,7 +120,9 @@ passport.use('local-signup', new LocalStrategy({
                         return done(null, created, {message: 'User already exists'})
                     }
 
-                })
+                }).catch(dbmain.Sequelize.ValidationError, function (err) {
+                    console.log(err)
+            });
         }
         else if(req.body.UserId) {
                 let BarberModel = models.Barber;
@@ -141,7 +143,9 @@ passport.use('local-signup', new LocalStrategy({
                             console.log("Barber already exists and could not be created");
                             return done(null, false, {message: 'Barber Profile already exists'})
                         }
-                    })
+                    }).catch(dbmain.Sequelize.ValidationError, function (err) {
+                    console.log(err)
+                });
     }
 })
 );

@@ -10,7 +10,7 @@ var passport = require('../../Services/Passport/Passport'); //index manifest fil
 
 var router = _express2.default.Router();
 
-router.post("/new", passport.authenticate('local-signup', { failureRedirect: '/profiles/login' }), require('./new'));
+router.post("/new", require('./new'));
 router.post('/login', passport.authenticate('local-signin', { successRedirect: '/profiles', failureRedirect: '/profiles/login' }), require('./login'));
 router.get('/login', require('./login'));
 router.get('/logout', require('./authMiddleWare'), require('./logout'));
