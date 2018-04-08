@@ -1,9 +1,5 @@
 'use strict';
 
-var _relations;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var dbmain = require('../config/DB/DBmain');
 var Sequelize = dbmain.Seq();
 
@@ -15,17 +11,27 @@ module.exports = {
             autoIncrement: true
         },
         price: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.DOUBLE,
             allowNull: false
         },
         duration: {
             type: Sequelize.INTEGER,
             allowNull: true
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        HairtypeId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
-    relations: (_relations = {
-        hasOne: "Hairstyle"
-    }, _defineProperty(_relations, 'hasOne', "Photo"), _defineProperty(_relations, 'BelongsTo', "User"), _defineProperty(_relations, 'BelongsTo', "Barber"), _defineProperty(_relations, 'hasMany', "Review"), _defineProperty(_relations, 'BelongsTo', "Hairtype"), _relations),
+    relations: {},
     options: {
         freezeTableName: true
     }

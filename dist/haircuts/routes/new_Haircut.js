@@ -1,16 +1,8 @@
 "use strict";
 
-var hairControl = require('../Controllers/HaircutController');
+var hairController = require('../Controllers/HaircutController');
 //route used for retrieving a specific user
-module.exports = function (req, res, next) {
-    var Haircut = hairControl.haircut();
-    Haircut.create({
-        id: req.id,
-        price: req.price,
-        duration: req.duration
-    }).then(function (haircut) {
-        res.send('Haircut' + haircut.id + ' added!');
-    }).catch(next);
-    res.send('Haircut added');
+module.exports = function (req, res) {
+    hairController.post(req, res);
 };
 //# sourceMappingURL=new_Haircut.js.map

@@ -10,21 +10,27 @@ module.exports = {
             autoIncrement: true
         },
         price: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.DOUBLE,
             allowNull: false
         },
         duration: {
             type: Sequelize.INTEGER,
             allowNull: true
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        HairtypeId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
     relations: {
-        hasOne: "Hairstyle",
-        hasOne: "Photo",
-        BelongsTo: "User",
-        BelongsTo: "Barber",
-        hasMany: "Review",
-        BelongsTo: "Hairtype"
     },
     options: {
         freezeTableName: true

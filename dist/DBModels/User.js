@@ -1,9 +1,5 @@
 'use strict';
 
-var _relations;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var dbmain = require('../config/DB/DBmain');
 var Sequelize = dbmain.Seq();
 var bcrypt = require('bcrypt');
@@ -52,9 +48,13 @@ module.exports = {
             defaultValue: null
         }
     },
-    relations: (_relations = {
+    relations: {
         hasMany: "Haircut"
-    }, _defineProperty(_relations, 'hasMany', "Review"), _defineProperty(_relations, 'BelongsTo', "Hairtype"), _defineProperty(_relations, 'hasOne', "Photo"), _defineProperty(_relations, 'hasOne', "Location"), _relations),
+        // hasMany: "Review",
+        // BelongsTo: "Hairtype",
+        // hasOne: "Photo",
+        // hasOne: "Location"
+    },
     options: {
         freezeTableName: true,
         hooks: {

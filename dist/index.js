@@ -7,8 +7,8 @@ var config = require('./config/config_env')[env];
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var passport = require('passport');
-var cookieParser = require('cookie-parser');
-var RedisStore = require('connect-redis')(session);
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
+// const RedisStore = require('connect-redis')(session);
 
 var profiles = require('./profiles/routes/index');
 var barber_profiles = require('./profiles/routes/barber/index');
@@ -26,18 +26,19 @@ var app = express();
 //Express MiddleWare
 app.use(express.static('public'));
 app.use(session({
-    store: new RedisStore({
-        url: config.redisStore.url
-    }),
     secret: config.redisStore.secret,
-    resave: false,
-    saveUninitialized: false
+    resave: true,
+    saveUninitialized: true
+    // store: new SequelizeStore({
+    //     db: require("./config/DB/config_db")
+    // }),
+    // cookie: { maxAge: 60 * 60 * 1000 }
 }));
 
 app.use(volleyball);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cookieParser());
+//initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -55,6 +56,10 @@ app.use(function (req, res, next) {
     next();
 });
 
+app.use(function (req, res, next) {
+    res.locals.session = req.session;
+    next();
+});
 //sets routes to appropriate names
 app.use("/profiles", profiles);
 app.use('/profiles/barbers', barber_profiles);

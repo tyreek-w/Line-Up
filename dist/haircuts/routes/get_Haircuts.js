@@ -1,16 +1,8 @@
 "use strict";
 
-var hairControl = require('../Controllers/HaircutController');
+var hairController = require('../Controllers/HaircutController');
 //route used for retrieving a specific user
 module.exports = function (req, res) {
-    var Haircut = hairControl.haircut();
-    if (req.params.id !== null) {
-        Haircut.findById(req.params.id).then(function (haircut) {
-            res.send(haircut.toJSON());
-        });
-    } else {
-        Haircut.findAll();
-    }
-    res.send('List of Haircuts');
+    hairController.index(req, res);
 };
 //# sourceMappingURL=get_Haircuts.js.map

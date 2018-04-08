@@ -48,11 +48,11 @@ module.exports = {
         }
     },
     relations: {
-        hasMany: "Haircut",
-        hasMany: "Review",
-        BelongsTo: "Hairtype",
-        hasOne: "Photo",
-        hasOne: "Location"
+        hasMany: "Haircut"
+        // hasMany: "Review",
+        // BelongsTo: "Hairtype",
+        // hasOne: "Photo",
+        // hasOne: "Location"
     },
     options: {
         freezeTableName: true,

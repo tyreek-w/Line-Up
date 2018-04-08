@@ -6,4 +6,3 @@ module.exports = function (req, res, next) {
     }
     res.redirect('/profiles/login');
 };
-//# sourceMappingURL=AuthMiddleware.js.map

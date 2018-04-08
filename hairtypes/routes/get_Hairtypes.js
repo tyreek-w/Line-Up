@@ -1,5 +1,6 @@
 "use strict";
+import HairtypeController from '../Controllers/HairtypeController'
 //route used for retrieving a specific user
 module.exports = function (req, res) {
-    res.send('list of hairtypes');
+    HairtypeController.index(req, res);
 };

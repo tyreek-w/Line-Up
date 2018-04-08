@@ -23,11 +23,13 @@
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var dbmain = require('../../config/DB/DBmain');
+var Sequelize = require('sequelize');
 var User = require('../../profiles/Controllers/UserController');
-var middleware = require('./AuthMiddleware');
+
 //serializes user id to session on each auth request after signin
 passport.serializeUser(function (user, done) {
-    done(null, user.id);
+    console.log('serialized');
+    done(null, user.get().id);
 });
 //removes user with id from session
 passport.deserializeUser(function (id, done) {
@@ -36,8 +38,6 @@ passport.deserializeUser(function (id, done) {
         done(err, user);
     });
 });
-
-passport.authenticateRoute = middleware;
 
 //Local signin strategy used for verfying and logging in existing users
 passport.use('local-signin', new LocalStrategy({
@@ -95,7 +95,7 @@ passport.use('local-signup', new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password',
     passReqToCallback: true
-}, function (req, username, password, done, err) {
+}, function (req, username, password, done) {
     console.log('checking credentials');
     if (req.body.type === 'client' || req.body.type == null) {
         var tempUser = User.use();
@@ -106,23 +106,24 @@ passport.use('local-signup', new LocalStrategy({
                 id: req.body.id, //This id is generated somewhere else (only provided by req in dev)
                 firstName: req.body.firstName,
                 lastName: req.body.lastName,
-                status: req.body.status,
+                status: req.body.status || 'active',
                 phoneNumber: req.body.phoneNumber,
-                gender: req.body.gender,
+                gender: req.body.gender || 0,
                 paymentInfo: req.body.paymentInfo || null,
                 passwordHash: password
             }
         }).spread(function (user, created) {
-            if (created) {
+            if (user) {
                 //if user is created return user in callback
-                console.log('new user created');
+                console.log('new user created with id: ' + user.get().id);
+                req.session.user = user;
                 return done(null, user);
             } else {
                 //if user is not created respond with error message
                 console.log('User has already been created');
                 return done(null, created, { message: 'User already exists' });
             }
-        }).catch(dbmain.Sequelize.ValidationError, function (err) {
+        }).catch(Sequelize.ValidationError, function (err) {
             console.log(err);
         });
     } else if (req.body.UserId) {
@@ -141,7 +142,7 @@ passport.use('local-signup', new LocalStrategy({
                 console.log("Barber already exists and could not be created");
                 return done(null, false, { message: 'Barber Profile already exists' });
             }
-        }).catch(dbmain.Sequelize.ValidationError, function (err) {
+        }).catch(Sequelize.ValidationError, function (err) {
             console.log(err);
         });
     }

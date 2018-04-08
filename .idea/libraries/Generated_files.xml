@@ -64,8 +64,10 @@
         <item url="file://$PROJECT_DIR$/dist/photos/routes/index.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/routes/new_Photo.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Controllers/AuthGateController.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/Controllers/BarberController.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/Controllers/BarberShopController.js" />
+        <item url="file://$PROJECT_DIR$/dist/profiles/Controllers/RegisterController.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/Controllers/UserController.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
         <item url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
@@ -176,8 +178,10 @@
       <root url="file://$PROJECT_DIR$/dist/photos/routes/index.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/routes/new_Photo.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/BarberDBModel.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Controllers/AuthGateController.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/Controllers/BarberController.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/Controllers/BarberShopController.js" />
+      <root url="file://$PROJECT_DIR$/dist/profiles/Controllers/RegisterController.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/Controllers/UserController.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/Barber.js" />
       <root url="file://$PROJECT_DIR$/dist/profiles/DBModels/DBConnection.js" />
