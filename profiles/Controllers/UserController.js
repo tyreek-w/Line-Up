@@ -3,24 +3,25 @@ const dbmain = require('../../config/DB/DBmain');
 const bcrypt = require('bcrypt');
 
 
-exports.use = function (req, res) {
-    let User = dbmain.model("User");
-    //validates user password
-    User.validatePassword = function (user, testPass) {
-        console.log("Validating password" + " : " + user.passwordHash + " and " + testPass);
-        bcrypt.compare(testPass, user.passwordHash, (err, res) => {
-            if (err) return (err);
-            else{
+module.exports = {
+    async validatePassword (user, req) {
+        try {
+            console.log("Validating password" + " : " + user.passwordHash + " and " + req.body.password);
+            bcrypt.compare(req.body.password, user.passwordHash, (err, res) => {
+                if(err) throw(err);
                 if(res) {
-                    console.log("validate successfully");
-                    return res;
+                        console.log("validate successfully");
+                        return res;
                 }
                 else {
-                    console.log("validate unsuccessful");
+                    console.log("validate unsuccessful " + res);
                     return res;
                 }
-            }
-        });
-    };
-    return User;
+            })
+        } catch(err) {
+            res.status(500).send({
+                error: 'An error has occurred trying to validate password: \n' + err
+            })
+        }
+    }
 };

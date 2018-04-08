@@ -1,5 +1,7 @@
 "use strict";
+import ReviewController from '../Controllers/ReviewController'
+
 //route used for retrieving a specific user
 module.exports = function (req, res) {
-    res.send('review of type comment added');
+    ReviewController.post(req, res);
 };

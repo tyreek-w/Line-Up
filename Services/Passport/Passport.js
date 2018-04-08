@@ -22,7 +22,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const dbmain = require('../../config/DB/DBmain');
 const Sequelize = require('sequelize');
-const User = require('../../profiles/Controllers/UserController');
+const UserController = require('../../profiles/Controllers/UserController');
 
 //serializes user id to session on each auth request after signin
 passport.serializeUser((user, done) => {
@@ -31,8 +31,8 @@ passport.serializeUser((user, done) => {
 });
 //removes user with id from session
 passport.deserializeUser((id, done) => {
-    let tempUser = User.use();
-    tempUser.findById(id)
+    let User = dbmain.model("User");
+    User.findById(id)
         .then((user,err) => {
             done(err, user);
         });
@@ -47,8 +47,8 @@ passport.use('local-signin', new LocalStrategy({
         let type = req.body.type || 'client';
         if (type === 'client') { //if type is client , proceeds to looking for a client User
             //looks for client with matching email
-            const tempUser = new User.use();
-            tempUser.findOne({where: {email: username}})
+            let User = dbmain.model("User");
+            User.findOne({where: {email: username}})
                 .then((user, err) => {
                     //respond with error if any are found
                     if (err) {return done(err);}
@@ -58,7 +58,7 @@ passport.use('local-signin', new LocalStrategy({
                         return done(null, false, {message: 'Incorrect email'})
                     }
                     //if password validation fails prompt user that password is incorrect
-                    if (tempUser.validatePassword(user, password)) {
+                    if ((UserController.validatePassword(user, req))) {
                         console.log("User has incorrect password");
                         return done(null, false, {message: 'Incorrect password'})
                     }
@@ -71,7 +71,8 @@ passport.use('local-signin', new LocalStrategy({
                 })
             } else if (type === 'barber' && req.userId) { //if type is barber and userid has been passed proceeds to looking for barber
             //looks for barber with matching username
-            models.Barber.findOne({
+            let Barber = model("Barber");
+            Barber.findOne({
                 where: {username: req.username}
             }).then((user, err) => {
                 //respond with error if any are found
@@ -94,9 +95,9 @@ passport.use('local-signup', new LocalStrategy({
     }, (req, username, password, done) => {
     console.log('checking credentials');
         if(req.body.type === 'client' || req.body.type == null) {
-            const tempUser = User.use();
+            let User = dbmain.model("User");
             console.log('checking for user existence...');
-            tempUser
+            User
                 .findOrCreate({ //look for existing user or create new
                     where: { email: username},
                     defaults: {
@@ -125,13 +126,13 @@ passport.use('local-signup', new LocalStrategy({
                     console.log(err)
             });
         }
-        else if(req.body.UserId) {
-                let BarberModel = models.Barber;
+        else if(req.session.user.id) {
+            let BarberModel = dbmain.model("Barber");
                 BarberModel
                     .findOrCreate({
                         where: { username: req.body.username},
                         defaults: {
-                            UserId: req.body.UserId,
+                            UserId: req.session.user.id,
                             isPremium: req.body.premium || false
                         }
                     })

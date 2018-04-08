@@ -74,8 +74,8 @@ module.exports = {
                                     UserId: parseInt(req.params.userId) || null,
                                     BarberId: parseInt(req.params.barberId) || null,
                                     HaircutId: parseInt(req.params.haircutId) || null
-                                }).then(function (haircut) {
-                                    res.send(haircut);
+                                }).then(function (photo) {
+                                    res.send(photo);
                                 });
                             } catch (err) {
                                 res.status(500).send({

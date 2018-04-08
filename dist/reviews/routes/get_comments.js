@@ -1,7 +1,12 @@
 "use strict";
-//route used for retrieving a specific user
+
+var _ReviewController = require("../Controllers/ReviewController");
+
+var _ReviewController2 = _interopRequireDefault(_ReviewController);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (req, res) {
-    res.send('list of reviews with non-null comment value');
+    _ReviewController2.default.index(req, res);
 };
 //# sourceMappingURL=get_comments.js.map

@@ -17,6 +17,11 @@ module.exports = {
             type: Sequelize.BOOLEAN,
             allowNull: false,
             defaultValue: false
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            allowNull: false,
+            foreignKey: true
         }
     },
     relations: {

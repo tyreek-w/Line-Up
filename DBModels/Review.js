@@ -18,8 +18,24 @@ module.exports = {
             allowNull: true
         },
         Rating: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.DOUBLE,
             allowNull: true
+        },
+        HaircutId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberShopId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
     relations: {

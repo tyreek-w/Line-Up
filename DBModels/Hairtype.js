@@ -6,6 +6,7 @@ module.exports = {
     model: {
         id: {
             type: Sequelize.INTEGER,
+            primaryKey: true,
             allowNull: false
         },
         type: {

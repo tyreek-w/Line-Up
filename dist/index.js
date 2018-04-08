@@ -11,7 +11,8 @@ var passport = require('passport');
 // const RedisStore = require('connect-redis')(session);
 
 var profiles = require('./profiles/routes/index');
-var barber_profiles = require('./profiles/routes/barber/index');
+var barbers = require('./barber/routes/index');
+var barbershops = require('./barbershop/routes/index');
 var reviews = require('./reviews/routes/index');
 var haircuts = require('./haircuts/routes/index');
 var Hairstyle = require('./Hairstyle/routes/index');
@@ -62,11 +63,12 @@ app.use(function (req, res, next) {
 });
 //sets routes to appropriate names
 app.use("/profiles", profiles);
-app.use('/profiles/barbers', barber_profiles);
+app.use('/barbers', barbers);
 app.use('/reviews', reviews);
 app.use('/haircuts', haircuts);
 app.use('/hairstyles', Hairstyle);
 app.use('/photos', photos);
+app.use('/barbershops', barbershops);
 
 //starts server and assigns it to a port
 app.listen(config.server.port, function (err) {
