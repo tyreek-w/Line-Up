@@ -3,13 +3,19 @@ const dbmain = require('../../config/DB/DBmain');
 
 module.exports = {
     async index (req, res) {
-        let query = { id: req.body.barbershopId};
+        let query = null;
+        if(req.params.barbershopId){
+            query = { id: req.body.barbershopId};
+        }
         let Barbershop = dbmain.model("BarberShop");
         let Barber = dbmain.model("Barber");
         let Photo = dbmain.model("Photo");
         let Service = dbmain.model("Service");
         try {
             Barbershop.findAll({
+                // if(query){
+                //     where: query
+                // },
                 limit: 30,
                 include: [
                     {

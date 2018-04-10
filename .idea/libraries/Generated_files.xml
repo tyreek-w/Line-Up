@@ -75,6 +75,7 @@
         <item url="file://$PROJECT_DIR$/dist/photos/Controllers.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/Controllers/PhotoController.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/routes/delete_Photo.js" />
+        <item url="file://$PROJECT_DIR$/dist/photos/routes/get_Photo.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/routes/get_Photos.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/routes/index.js" />
         <item url="file://$PROJECT_DIR$/dist/photos/routes/new_Photo.js" />
@@ -204,6 +205,7 @@
       <root url="file://$PROJECT_DIR$/dist/photos/Controllers.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/Controllers/PhotoController.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/routes/delete_Photo.js" />
+      <root url="file://$PROJECT_DIR$/dist/photos/routes/get_Photo.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/routes/get_Photos.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/routes/index.js" />
       <root url="file://$PROJECT_DIR$/dist/photos/routes/new_Photo.js" />

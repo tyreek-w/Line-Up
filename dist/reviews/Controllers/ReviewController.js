@@ -14,6 +14,9 @@ module.exports = {
                         case 0:
                             query = {};
 
+                            if (!(req.params.reviewId === undefined)) {
+                                query.id = req.params.reviewId;
+                            }
                             if (!(req.params.barberId === undefined)) {
                                 query.BarberId = req.params.barberId;
                             }
@@ -50,7 +53,7 @@ module.exports = {
                                 });
                             }
 
-                        case 10:
+                        case 11:
                         case 'end':
                             return _context.stop();
                     }

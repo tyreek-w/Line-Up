@@ -32,13 +32,18 @@ module.exports = {
         Haircut.belongsTo(Hairtype);
         Haircut.belongsTo(User);
         Haircut.belongsTo(Barber);
+        let haircutBarber = null;
+        if(!(req.session.barber === undefined)){
+            haircutBarber = req.session.barber.id;
+        }
         try {
             Haircut.create({
                 id: req.body.id,
                 price: req.body.price,
                 duration: req.body.duration,
-                UserId: parseInt(req.params.userId) || null,
-                BarberId: parseInt(req.params.barberId) || null
+                UserId: req.session.user.id,
+                BarberId: haircutBarber,
+                ApprovedBy: null
             })
                 .then(haircut => {
                     res.send(haircut)

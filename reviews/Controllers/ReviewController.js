@@ -3,6 +3,9 @@ const dbmain = require('../../config/DB/DBmain');
 module.exports =  {
     async index (req, res) {
         let query = {};
+        if(!(req.params.reviewId === undefined)){
+            query.id = req.params.reviewId;
+        }
         if(!(req.params.barberId === undefined)){
             query.BarberId = req.params.barberId;
         }

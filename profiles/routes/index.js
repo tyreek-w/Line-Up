@@ -13,11 +13,6 @@ router.get('/', require('./get_user'));
 router.get('/:userId', authMiddleWare, require('./get_user'));
 router.patch('/:userId', authMiddleWare, require('./edit_user'));
 
-//haircut routes
-router.post('/:userId/haircuts/new', function (req, res) {
-    haircutController.post(req, res);
-});
-
 router.get('/:userId/haircuts/', function (req, res) {
     haircutController.index(req, res);
 });

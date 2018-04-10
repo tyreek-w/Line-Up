@@ -29,6 +29,9 @@ module.exports = {
         HairtypeId: {
             type: Sequelize.INTEGER,
             foreignKey: true
+        },
+        ApprovedBy: {
+            type: Sequelize.INTEGER
         }
     },
     relations: {},

@@ -51,7 +51,7 @@ module.exports = {
     }(),
     post: function () {
         var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(req, res) {
-            var Haircut, User, Barber, Hairtype;
+            var Haircut, User, Barber, Hairtype, haircutBarber;
             return regeneratorRuntime.wrap(function _callee2$(_context2) {
                 while (1) {
                     switch (_context2.prev = _context2.next) {
@@ -64,13 +64,19 @@ module.exports = {
                             Haircut.belongsTo(Hairtype);
                             Haircut.belongsTo(User);
                             Haircut.belongsTo(Barber);
+                            haircutBarber = null;
+
+                            if (!(req.session.barber === undefined)) {
+                                haircutBarber = req.session.barber.id;
+                            }
                             try {
                                 Haircut.create({
                                     id: req.body.id,
                                     price: req.body.price,
                                     duration: req.body.duration,
-                                    UserId: parseInt(req.params.userId) || null,
-                                    BarberId: parseInt(req.params.barberId) || null
+                                    UserId: req.session.user.id,
+                                    BarberId: haircutBarber,
+                                    ApprovedBy: null
                                 }).then(function (haircut) {
                                     res.send(haircut);
                                 });
@@ -80,7 +86,7 @@ module.exports = {
                                 });
                             }
 
-                        case 8:
+                        case 10:
                         case 'end':
                             return _context2.stop();
                     }
