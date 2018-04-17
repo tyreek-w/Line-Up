@@ -24,34 +24,72 @@ module.exports = {
             })
         }
     },
-    async post (req, res) {
+    async postUserHaircut (req, res) {
         let Haircut = dbmain.model("Haircut");
         let User = dbmain.model("User");
-        let Barber = dbmain.model('Barber');
-        let Hairtype = dbmain.model('Hairtype');
-        Haircut.belongsTo(Hairtype);
-        Haircut.belongsTo(User);
-        Haircut.belongsTo(Barber);
-        let haircutBarber = null;
-        if(!(req.session.barber === undefined)){
-            haircutBarber = req.session.barber.id;
+        let BarberHaircut = dbmain.model('BarberHaircut');
+        let beard;
+        if(req.body.beard === "no"){
+            beard = false;
+        }
+        if(req.body.beard === "yes"){
+            beard = true;
         }
         try {
             Haircut.create({
                 id: req.body.id,
                 price: req.body.price,
                 duration: req.body.duration,
-                UserId: req.session.user.id,
-                BarberId: haircutBarber,
-                ApprovedBy: null
+                UserId: req.body.UserId,
+                BarberHaircutId: req.body.BarberHaircutId,
+                length: req.body.length,
+                Beard: beard
             })
                 .then(haircut => {
                     res.send(haircut)
                 })
         } catch(err) {
+            console.log(err);
             res.status(500).send({
                 error: 'An error has occurred trying to create haircut' + err
             })
         }
-    }
+    },
+    async getLikes (req, res) {
+        let BarberHaircutReview = dbmain.model("BarberHaircutReview");
+        let Review = dbmain.model("Review");
+
+        BarberHaircutReview.findById(req.body.BarberHaircutId)
+            .then((haircutReview) => {
+                Review.findAll({
+                    where: {
+                        id: haircutReview.ReviewId,
+                        Like: true
+                    }
+                })
+                    .then((reviews) => {
+                        res.status(200).send(reviews.length);
+                    })
+            })
+    },
+    async getComments (req, res) {
+        let BarberHaircutReview = dbmain.model("BarberHaircutReview");
+        let Review = dbmain.model("Review");
+
+        BarberHaircutReview.findById(req.body.BarberHaircutId)
+            .then((haircutReview) => {
+                Review.findAll({
+                    where: {
+                        id: haircutReview.ReviewId,
+                        Comment: {
+                            //look for all reviews where comment is not null
+                            $ne: null
+                        }
+                    }
+                })
+                    .then((reviews) => {
+                        res.status(200).send(reviews);
+                    })
+            })
+    },
 };

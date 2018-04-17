@@ -11,14 +11,6 @@ module.exports = {
             primaryKey: true,
             autoIncrement: true
         },
-        firstName: {
-            type: Sequelize.STRING,
-            allowNull: false
-        },
-        lastName: {
-            type: Sequelize.STRING,
-            allowNull: false
-        },
         status: {
             type: Sequelize.STRING,
             defaultValue: 'active'
@@ -46,13 +38,6 @@ module.exports = {
             allowNull: true,
             defaultValue: null
         }
-    },
-    relations: {
-        hasMany: "Haircut"
-        // hasMany: "Review",
-        // BelongsTo: "Hairtype",
-        // hasOne: "Photo",
-        // hasOne: "Location"
     },
     options: {
         freezeTableName: true,

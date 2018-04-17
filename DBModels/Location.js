@@ -24,6 +24,10 @@ module.exports = {
         country: {
             type: Sequelize.STRING
 
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
     relations: {

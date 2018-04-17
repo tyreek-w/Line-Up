@@ -13,13 +13,21 @@ module.exports = {
             type: Sequelize.STRING,
             allowNull: false
         },
+        price: {
+            type: Sequelize.DOUBLE,
+            allowNull: false
+        },
         description: {
             type: Sequelize.TEXT,
             allowNull: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
     relations: {
-        belongsTo: "Haircut"
+        belongsToMany: "Haircut"
     },
     options: {
         freezeTableName: true

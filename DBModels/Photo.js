@@ -12,11 +12,23 @@ module.exports = {
         imgUrl: {
             type: Sequelize.STRING,
             allowNull: false
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberShopId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        HaircutId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
-    },
-    relations: {
-        belongsTo: "Barber",
-        belongsTo: "BarberShop"
     },
     options: {
         freezeTableName: true

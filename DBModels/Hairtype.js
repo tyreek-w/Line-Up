@@ -13,20 +13,17 @@ module.exports = {
             type: Sequelize.STRING,
             allowNull: false
         },
-        length: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false,
-            defaultValue: false
+        subtype: {
+            type: Sequelize.STRING,
+            allowNull: false
         },
-        position: {
-            type: Sequelize.TINYINT,
-            allowNull: false,
-            defaultValue: 0
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
     relations: {
-        hasMany: "User",
-        hasMany: "Haircut"
+        BelongsTo: dbmain.model("User")
     },
     options: {
         freezeTableName: true

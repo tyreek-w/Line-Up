@@ -4,8 +4,13 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/DBConnection.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Barber.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/BarberHaircut.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/BarberHaircutReview.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/BarberShop.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/BarbershopLocation.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/BarbershopPhoto.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Haircut.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/HaircutPhoto.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Hairstyle.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Hairtype.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Location.js" />
@@ -13,6 +18,7 @@
         <item url="file://$PROJECT_DIR$/dist/DBModels/Review.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/Service.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/User.js" />
+        <item url="file://$PROJECT_DIR$/dist/DBModels/UserHairtype.js" />
         <item url="file://$PROJECT_DIR$/dist/DBModels/index.js" />
         <item url="file://$PROJECT_DIR$/dist/Hairstyle/Controllers/HairstyleController.js" />
         <item url="file://$PROJECT_DIR$/dist/Hairstyle/routes/delete_Hairstyle.js" />
@@ -134,8 +140,13 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/DBConnection.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Barber.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/BarberHaircut.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/BarberHaircutReview.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/BarberShop.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/BarbershopLocation.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/BarbershopPhoto.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Haircut.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/HaircutPhoto.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Hairstyle.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Hairtype.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Location.js" />
@@ -143,6 +154,7 @@
       <root url="file://$PROJECT_DIR$/dist/DBModels/Review.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/Service.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/User.js" />
+      <root url="file://$PROJECT_DIR$/dist/DBModels/UserHairtype.js" />
       <root url="file://$PROJECT_DIR$/dist/DBModels/index.js" />
       <root url="file://$PROJECT_DIR$/dist/Hairstyle/Controllers/HairstyleController.js" />
       <root url="file://$PROJECT_DIR$/dist/Hairstyle/routes/delete_Hairstyle.js" />

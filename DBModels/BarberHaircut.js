@@ -9,24 +9,26 @@ module.exports = {
             primaryKey: true,
             autoIncrement: true
         },
-        username: {
-            type: Sequelize.STRING,
+        price: {
+            type: Sequelize.DOUBLE,
             allowNull: false
         },
-        isPremium: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false,
-            defaultValue: false
-        },
-        UserId: {
+        HairtypeId: {
             type: Sequelize.INTEGER,
-            allowNull: false,
             foreignKey: true
         },
-        BarberShopId: {
+        HairstyleId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
             type: Sequelize.INTEGER,
             foreignKey: true
         }
+    },
+    relations: {
+        HasMany: "Haircut",
+        BelongsTo: "Barber"
     },
     options: {
         freezeTableName: true

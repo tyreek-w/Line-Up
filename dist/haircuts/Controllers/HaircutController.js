@@ -49,44 +49,44 @@ module.exports = {
 
         return index;
     }(),
-    post: function () {
+    postUserHaircut: function () {
         var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(req, res) {
-            var Haircut, User, Barber, Hairtype, haircutBarber;
+            var Haircut, User, BarberHaircut, beard;
             return regeneratorRuntime.wrap(function _callee2$(_context2) {
                 while (1) {
                     switch (_context2.prev = _context2.next) {
                         case 0:
                             Haircut = dbmain.model("Haircut");
                             User = dbmain.model("User");
-                            Barber = dbmain.model('Barber');
-                            Hairtype = dbmain.model('Hairtype');
+                            BarberHaircut = dbmain.model('BarberHaircut');
+                            beard = void 0;
 
-                            Haircut.belongsTo(Hairtype);
-                            Haircut.belongsTo(User);
-                            Haircut.belongsTo(Barber);
-                            haircutBarber = null;
-
-                            if (!(req.session.barber === undefined)) {
-                                haircutBarber = req.session.barber.id;
+                            if (req.body.beard === "no") {
+                                beard = false;
+                            }
+                            if (req.body.beard === "yes") {
+                                beard = true;
                             }
                             try {
                                 Haircut.create({
                                     id: req.body.id,
                                     price: req.body.price,
                                     duration: req.body.duration,
-                                    UserId: req.session.user.id,
-                                    BarberId: haircutBarber,
-                                    ApprovedBy: null
+                                    UserId: req.body.UserId,
+                                    BarberHaircutId: req.body.BarberHaircutId,
+                                    length: req.body.length,
+                                    Beard: beard
                                 }).then(function (haircut) {
                                     res.send(haircut);
                                 });
                             } catch (err) {
+                                console.log(err);
                                 res.status(500).send({
                                     error: 'An error has occurred trying to create haircut' + err
                                 });
                             }
 
-                        case 10:
+                        case 7:
                         case 'end':
                             return _context2.stop();
                     }
@@ -94,11 +94,86 @@ module.exports = {
             }, _callee2, this);
         }));
 
-        function post(_x3, _x4) {
+        function postUserHaircut(_x3, _x4) {
             return _ref2.apply(this, arguments);
         }
 
-        return post;
+        return postUserHaircut;
+    }(),
+    getLikes: function () {
+        var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(req, res) {
+            var BarberHaircutReview, Review;
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+                while (1) {
+                    switch (_context3.prev = _context3.next) {
+                        case 0:
+                            BarberHaircutReview = dbmain.model("BarberHaircutReview");
+                            Review = dbmain.model("Review");
+
+
+                            BarberHaircutReview.findById(req.body.BarberHaircutId).then(function (haircutReview) {
+                                Review.findAll({
+                                    where: {
+                                        id: haircutReview.ReviewId,
+                                        Like: true
+                                    }
+                                }).then(function (reviews) {
+                                    res.status(200).send(reviews.length);
+                                });
+                            });
+
+                        case 3:
+                        case 'end':
+                            return _context3.stop();
+                    }
+                }
+            }, _callee3, this);
+        }));
+
+        function getLikes(_x5, _x6) {
+            return _ref3.apply(this, arguments);
+        }
+
+        return getLikes;
+    }(),
+    getComments: function () {
+        var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(req, res) {
+            var BarberHaircutReview, Review;
+            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+                while (1) {
+                    switch (_context4.prev = _context4.next) {
+                        case 0:
+                            BarberHaircutReview = dbmain.model("BarberHaircutReview");
+                            Review = dbmain.model("Review");
+
+
+                            BarberHaircutReview.findById(req.body.BarberHaircutId).then(function (haircutReview) {
+                                Review.findAll({
+                                    where: {
+                                        id: haircutReview.ReviewId,
+                                        Comment: {
+                                            //look for all reviews where comment is not null
+                                            $ne: null
+                                        }
+                                    }
+                                }).then(function (reviews) {
+                                    res.status(200).send(reviews);
+                                });
+                            });
+
+                        case 3:
+                        case 'end':
+                            return _context4.stop();
+                    }
+                }
+            }, _callee4, this);
+        }));
+
+        function getComments(_x7, _x8) {
+            return _ref4.apply(this, arguments);
+        }
+
+        return getComments;
     }()
 };
 //# sourceMappingURL=HaircutController.js.map

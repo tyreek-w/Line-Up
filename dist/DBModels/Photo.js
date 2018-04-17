@@ -1,7 +1,5 @@
 'use strict';
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var dbmain = require('../config/DB/DBmain');
 var Sequelize = dbmain.Seq();
 
@@ -15,11 +13,24 @@ module.exports = {
         imgUrl: {
             type: Sequelize.STRING,
             allowNull: false
+        },
+        UserId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        BarberShopId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
+        HaircutId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
         }
     },
-    relations: _defineProperty({
-        belongsTo: "Barber"
-    }, 'belongsTo', "BarberShop"),
     options: {
         freezeTableName: true
     }

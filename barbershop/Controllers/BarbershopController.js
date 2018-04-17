@@ -3,36 +3,19 @@ const dbmain = require('../../config/DB/DBmain');
 
 module.exports = {
     async index (req, res) {
-        let query = null;
-        if(req.params.barbershopId){
-            query = { id: req.body.barbershopId};
-        }
+        // let query = null;
+        // if(req.params.barbershopId){
+        //     query = { id: req.body.barbershopId};
+        // }
         let Barbershop = dbmain.model("BarberShop");
-        let Barber = dbmain.model("Barber");
-        let Photo = dbmain.model("Photo");
-        let Service = dbmain.model("Service");
+        // let Barber = dbmain.model("Barber");
+        // let Photo = dbmain.model("Photo");
+        // let Service = dbmain.model("Service");
         try {
             Barbershop.findAll({
-                // if(query){
-                //     where: query
-                // },
-                limit: 30,
-                include: [
-                    {
-                        model: Barber,
-                        model: Photo,
-                        model: Service
-                    }
-                ]
+                limit: 30
             }).then(barbershops => {
-                const resObj = barbershops.map(barbershop => {
-                    return Object.assign({},
-                        {
-                            //barbershop object information
-
-                        })
-                })
-                res.json(resObj);
+                res.json(barbershops);
             });
         } catch(err) {
             res.status(500).send({

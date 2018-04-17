@@ -48,7 +48,19 @@ passport.use('local-signin', new LocalStrategy({
         if (type === 'client') { //if type is client , proceeds to looking for a client User
             //looks for client with matching email
             let User = dbmain.model("User");
-            User.findOne({where: {email: username}})
+            let Hairtype = dbmain.model("Hairtype");
+            let Photo = dbmain.model("Photo");
+            let Location = dbmain.model("Location");
+            User.findOne(
+                {where: {email: username},
+                include: [
+                {
+                    model: Hairtype,
+                    model: Photo,
+                    model: Location, as: 'UserPosition'
+                }
+            ]
+            })
                 .then((user, err) => {
                     //respond with error if any are found
                     if (err) {return done(err);}
@@ -102,8 +114,6 @@ passport.use('local-signup', new LocalStrategy({
                     where: { email: username},
                     defaults: {
                         id: req.body.id, //This id is generated somewhere else (only provided by req in dev)
-                        firstName: req.body.firstName,
-                        lastName: req.body.lastName,
                         status: req.body.status || 'active',
                         phoneNumber: req.body.phoneNumber,
                         gender: req.body.gender || 0,

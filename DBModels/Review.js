@@ -38,12 +38,6 @@ module.exports = {
             foreignKey: true
         }
     },
-    relations: {
-        belongsTo: "Haircut",
-        belongsTo: "User",
-        belongsTo: "Barber",
-        belongsTo: "BarberShop"
-    },
     options: {
         freezeTableName: true
     }

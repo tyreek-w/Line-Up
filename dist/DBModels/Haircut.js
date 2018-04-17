@@ -10,31 +10,31 @@ module.exports = {
             primaryKey: true,
             autoIncrement: true
         },
-        price: {
-            type: Sequelize.DOUBLE,
-            allowNull: false
+        length: {
+            type: Sequelize.STRING,
+            allowNull: true,
+            defaultValue: false
         },
         duration: {
             type: Sequelize.INTEGER,
             allowNull: true
         },
+        BarberHaircutId: {
+            type: Sequelize.INTEGER,
+            foreignKey: true
+        },
         UserId: {
             type: Sequelize.INTEGER,
             foreignKey: true
         },
-        BarberId: {
-            type: Sequelize.INTEGER,
-            foreignKey: true
-        },
-        HairtypeId: {
-            type: Sequelize.INTEGER,
-            foreignKey: true
-        },
-        ApprovedBy: {
-            type: Sequelize.INTEGER
+        Beard: {
+            type: Sequelize.BOOLEAN,
+            defaultValue: false
         }
     },
-    relations: {},
+    relations: {
+        HasOne: "Photo"
+    },
     options: {
         freezeTableName: true
     }

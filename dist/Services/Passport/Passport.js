@@ -1,5 +1,7 @@
 'use strict';
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 /*
 * PassPort service for registering both barbers and clients
 *
@@ -47,10 +49,19 @@ passport.use('local-signin', new LocalStrategy({
 }, function (req, username, password, done) {
     var type = req.body.type || 'client';
     if (type === 'client') {
+        var _ref;
+
         //if type is client , proceeds to looking for a client User
         //looks for client with matching email
         var User = dbmain.model("User");
-        User.findOne({ where: { email: username } }).then(function (user, err) {
+        var Hairtype = dbmain.model("Hairtype");
+        var Photo = dbmain.model("Photo");
+        var Location = dbmain.model("Location");
+        User.findOne({ where: { email: username },
+            include: [(_ref = {
+                model: Hairtype
+            }, _defineProperty(_ref, 'model', Photo), _defineProperty(_ref, 'model', Location), _defineProperty(_ref, 'as', 'UserPosition'), _ref)]
+        }).then(function (user, err) {
             //respond with error if any are found
             if (err) {
                 return done(err);
@@ -105,8 +116,6 @@ passport.use('local-signup', new LocalStrategy({
             where: { email: username },
             defaults: {
                 id: req.body.id, //This id is generated somewhere else (only provided by req in dev)
-                firstName: req.body.firstName,
-                lastName: req.body.lastName,
                 status: req.body.status || 'active',
                 phoneNumber: req.body.phoneNumber,
                 gender: req.body.gender || 0,

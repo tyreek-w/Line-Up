@@ -11,8 +11,6 @@ module.exports = function (req, res, next) {
         //and be a minumum of 6 characters, maximum 30
         new RegExp('^[a-zA-Z0-9]{6,30}$')),
         birthdate: Joi.string(),
-        firstName: Joi.string(),
-        lastName: Joi.string(),
         username: Joi.string().token(),
         type: Joi.string(),
         id: Joi.number()
